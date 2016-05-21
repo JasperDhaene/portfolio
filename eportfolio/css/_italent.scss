@@ -1,0 +1,94 @@
+$dark: #111111;
+$white: #F8F8F8;
+$gray: #4c4c4c;
+$light-gray: #f3f3f3;
+$mid-gray: #dfdfdf;
+$dark-gray: #878787;
+$green: #00583F;
+$green-light: #007251;
+$green-flashy: #93ffe0;
+$green-flashy-dark: #0affb9;
+$green-flashy-contrast: #565656;
+$green-flashy-contrast-light: #707070;
+$facebook-blue: #3B5998;
+$github-gray: #3f3c3c;
+$gmail-red: #CC181E;
+html {
+    body {
+        main {
+            
+            
+            > section#italent {
+                height: auto;
+                //margin: 25vh 0;
+                padding: 0 20px;
+                
+                h1 {
+                    font-family: 'WC';
+                    font-size: 10em;
+                }
+                
+                h2 {
+                    font-size: 5em;
+                    margin: 20vh auto;
+                    width: 50vw;
+                    text-align: center;
+                }
+                
+                h3 {
+                    width: 100vw;
+                    word-spacing: 30vw; //TODO seperate
+                    //margin-right: 10vw;
+                }
+                
+                h4 {
+                    font-size: 2em;
+                }
+                h5 {
+                    color: $dark-gray;
+                    font-size: 1em;
+                    //margin-bottom: 20px;
+                }
+                
+                ul {
+                    list-style: none;
+                    
+                    strong {
+                        font-size: 1.5em;    
+                    }
+                    
+                    li {
+                        margin: 40px 20px;
+                    }
+                    
+                }
+                
+                > article {
+                    margin-bottom: 20vh;
+                    width: 85vw;
+                    
+                    > section { //sub-sectin of "opdrachtX"
+                        p {
+                            margin: 10px 0;
+                        }
+                    }
+                    
+                    section.inline_section {
+                        width: 40vw;
+                        margin: 0 0 10vh 0;
+                        display: inline-block;
+                    }
+                    
+                    .inline_title {
+                        width: auto;
+                        margin-right: 10vw;
+                    }
+                }
+                
+                
+                
+                
+            }
+        }
+    }
+}

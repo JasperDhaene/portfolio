@@ -1,0 +1,47 @@
+html {
+    body {
+        
+        header {
+            //see _header.scss
+        }
+        
+        > main#italent { //CONTENT SECTION
+            
+            display: block;
+            
+            section {    
+                background-color: rgba(255,255,255,0.2);
+                margin: 0 5%;
+                padding: 3%;
+                flex-direction: column;
+                justify-content: flex-start;
+                              
+                > p {
+                    width: auto;
+                    text-align: center;
+                    margin: 0 auto 20px auto;
+
+                    @media #{$laptop} {
+                        //padding: 15% 0;
+                    }
+                    @media #{$desktop} {
+                        //padding: 25% 0;
+                        //font-size: 2em;
+                    }
+                }
+        
+                ul {
+                    padding: 0px 15%;
+                    
+                }
+                
+            }
+  
+        }
+        
+        footer#italent {
+            //see _footer.scss
+            display: none;
+        }
+    }
+}

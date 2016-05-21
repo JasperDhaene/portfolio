@@ -1,0 +1,18 @@
+html {
+    body {
+
+        header {
+            //see _header.scss
+        }
+        
+        > main#links { //CONTENT SECTION
+            section {
+                flex-direction: column;
+            }  
+        }
+        
+        footer {
+            //see _footer.scss
+        }
+    }
+}

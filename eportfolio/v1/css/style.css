@@ -1,0 +1,417 @@
+/* Variables */
+html body header {
+  width: 100%; }
+  html body header > nav {
+    background-color: rgba(255, 255, 255, 0.1); }
+    @media (min-width: 1366px), (min-width: 769px) and (max-width: 1366px) {
+      html body header > nav {
+        box-sizing: border-box;
+        font-size: 1em;
+        display: block;
+        vertical-align: baseline; } }
+    html body header > nav ul {
+      padding: 10px 0; }
+      @media (min-width: 1366px), (min-width: 769px) and (max-width: 1366px) {
+        html body header > nav ul {
+          width: 100%;
+          box-sizing: border-box;
+          font-size: 50%;
+          display: flex;
+          flex-flow: row nowrap;
+          padding: 0 10px;
+          justify-content: flex-end;
+          align-self: flex-start;
+          vertical-align: baseline; } }
+      html body header > nav ul li:first-child {
+        display: block;
+        margin-left: 15px; }
+        @media (min-width: 1366px), (min-width: 769px) and (max-width: 1366px) {
+          html body header > nav ul li:first-child {
+            margin: 0 10px;
+            font-size: 3em;
+            align-self: flex-start;
+            vertical-align: baseline; } }
+        html body header > nav ul li:first-child i {
+          display: inline;
+          box-sizing: border-box;
+          color: #fff247;
+          text-align: right; }
+          @media (min-width: 1366px), (min-width: 769px) and (max-width: 1366px) {
+            html body header > nav ul li:first-child i {
+              display: none; } }
+        html body header > nav ul li:first-child h6 {
+          text-align: left;
+          display: inline;
+          box-sizing: border-box;
+          color: #fff9ff;
+          margin-right: 30%; }
+          html body header > nav ul li:first-child h6 a {
+            display: inline; }
+            @media (min-width: 1366px), (min-width: 769px) and (max-width: 1366px) {
+              html body header > nav ul li:first-child h6 a {
+                display: block; } }
+          @media (min-width: 1366px), (min-width: 769px) and (max-width: 1366px) {
+            html body header > nav ul li:first-child h6 {
+              width: auto;
+              margin-right: 0; } }
+        @media (min-width: 1366px) {
+          html body header > nav ul li:first-child:hover {
+            border-bottom: 0; } }
+      @media (min-width: 1366px), (min-width: 769px) and (max-width: 1366px) {
+        html body header > nav ul li:nth-child(2) {
+          margin-left: auto; } }
+      html body header > nav ul li {
+        display: none;
+        font-size: 1.5em;
+        margin: 10px 0 10px 40px;
+        list-style: none;
+        vertical-align: baseline; }
+        @media (min-width: 1366px), (min-width: 769px) and (max-width: 1366px) {
+          html body header > nav ul li {
+            display: block; } }
+        @media (min-width: 1366px) {
+          html body header > nav ul li:hover {
+            border-bottom: 1px solid #fff9ff; } }
+        html body header > nav ul li a, html body header > nav ul li a:visited {
+          display: block;
+          color: #fff9ff; }
+        @media (min-width: 1366px), (min-width: 769px) and (max-width: 1366px) {
+          html body header > nav ul li.current {
+            border-bottom: 1px solid #fff9ff; } }
+        @media (min-width: 1366px), (min-width: 769px) and (max-width: 1366px) {
+          html body header > nav ul li:first-child.current {
+            border-bottom-color: transparent; } }
+  html body header:hover nav li, html body header:focus nav li {
+    display: block; }
+    @media (min-width: 1366px), (min-width: 769px) and (max-width: 1366px) {
+      html body header:hover nav li, html body header:focus nav li {
+        display: inline; } }
+
+html body footer {
+  bottom: 0;
+  height: 2em;
+  font-size: 1.5em;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: static;
+  flex-direction: column;
+  margin-top: 50%; }
+  @media (min-width: 1366px), (min-width: 769px) and (max-width: 1366px) {
+    html body footer {
+      position: absolute;
+      flex-direction: row;
+      height: 10%;
+      margin-top: 0; } }
+  html body footer a, html body footer a:visited {
+    box-sizing: border-box;
+    border: 3px solid #fff9ff;
+    border-radius: 20px;
+    margin: 10px 10%;
+    width: 40%;
+    text-align: center;
+    color: #fff9ff; }
+    html body footer a:nth-child(1), html body footer a:visited:nth-child(1) {
+      border-color: #3B5998;
+      color: #3B5998; }
+    html body footer a:nth-child(2), html body footer a:visited:nth-child(2) {
+      border-color: #666161;
+      color: #666161; }
+    html body footer a:nth-child(3), html body footer a:visited:nth-child(3) {
+      border-color: #CC181E;
+      color: #CC181E; }
+    @media (min-width: 1366px), (min-width: 769px) and (max-width: 1366px) {
+      html body footer a, html body footer a:visited {
+        width: 50%; }
+        html body footer a:nth-child(1), html body footer a:visited:nth-child(1) {
+          border-color: #fff9ff;
+          color: #fff9ff; }
+        html body footer a:nth-child(2), html body footer a:visited:nth-child(2) {
+          border-color: #fff9ff;
+          color: #fff9ff; }
+        html body footer a:nth-child(3), html body footer a:visited:nth-child(3) {
+          border-color: #fff9ff;
+          color: #fff9ff; }
+        html body footer a:nth-child(1):hover, html body footer a:visited:nth-child(1):hover {
+          border-color: #3B5998;
+          color: #3B5998; }
+        html body footer a:nth-child(2):hover, html body footer a:visited:nth-child(2):hover {
+          border-color: #252323;
+          color: #252323; }
+        html body footer a:nth-child(3):hover, html body footer a:visited:nth-child(3):hover {
+          border-color: #CC181E;
+          color: #CC181E; } }
+html body footer#homepage {
+  margin-top: 30%; }
+
+@font-face {
+  font-family: 'BlackoutInverse';
+  src: url("../fonts/Blackout-2am.ttf");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'WC';
+  src: url("../fonts/WCManoNegraBta.otf");
+  font-weight: normal;
+  font-style: normal; }
+html body > main form {
+  padding: 0 10%; }
+  @media (min-width: 769px) and (max-width: 1366px) {
+    html body > main form {
+      padding: 10% 30%;
+      width: 50%; } }
+  @media (min-width: 1366px) {
+    html body > main form {
+      padding: 10% 0;
+      width: 50%; } }
+  html body > main form input[type=submit], html body > main form input[type=text], html body > main form textarea, html body > main form input[type=email] {
+    display: block;
+    font-size: 1.5em;
+    padding: 5px;
+    margin: 25px auto 5px auto;
+    box-sizing: border-box;
+    font-weight: bold;
+    background: #392a6d;
+    color: #fff9ff;
+    border: 2px solid #111111;
+    border-radius: 10px;
+    text-align: center;
+    width: 50%; }
+    @media (min-width: 1366px) {
+      html body > main form input[type=submit], html body > main form input[type=text], html body > main form textarea, html body > main form input[type=email] {
+        width: 20%; } }
+  html body > main form input[type=text], html body > main form textarea, html body > main form input[type=email] {
+    margin: 20px auto;
+    text-align: left;
+    font-weight: normal;
+    background-color: transparent;
+    border-radius: 0;
+    border-width: 0 0 1px 0;
+    border-bottom-color: #fff9ff;
+    width: 100%; }
+  html body > main form textarea {
+    min-height: 4em; }
+    @media (min-width: 1366px) {
+      html body > main form textarea {
+        min-height: 8em; } }
+  html body > main form input[type=submit]:hover, html body > main form input[type=text]:hover, html body > main form textarea:hover, html body > main form input[type=email]:hover {
+    background-color: #fff9ff;
+    color: #392a6d; }
+  html body > main form input[type=text]:hover, html body > main form textarea:hover, html body > main form input[type=email]:hover {
+    background-color: transparent;
+    color: #fff9ff; }
+  html body > main form input:focus, html body > main form textarea:focus, html body > main form input:active, html body > main form textarea:active {
+    outline: 0;
+    border-bottom-color: #fff9ff;
+    border-bottom-width: 2px; }
+
+html body > main ul {
+  padding: 0 30px;
+  list-style: none; }
+  html body > main ul li {
+    display: flex;
+    margin: 30px 0;
+    flex-direction: column;
+    align-items: center; }
+    @media (min-width: 1366px), (min-width: 769px) and (max-width: 1366px) {
+      html body > main ul li {
+        flex-direction: row; } }
+    html body > main ul li section {
+      display: flex;
+      flex: 3;
+      align-items: center;
+      text-align: center; }
+      @media (min-width: 1366px), (min-width: 769px) and (max-width: 1366px) {
+        html body > main ul li section {
+          flex-direction: column;
+          justify-content: space-around;
+          align-items: flex-start;
+          text-align: left; } }
+      html body > main ul li section h4 {
+        flex: 1;
+        font-size: 2em; }
+      html body > main ul li section p {
+        flex: 2; }
+    html body > main ul li picture {
+      flex: 1;
+      width: 30%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      html body > main ul li picture img {
+        border: 5px solid #FFF;
+        box-shadow: 0px 0px 5px #CCC;
+        margin-bottom: 5%;
+        border-radius: 50%; }
+
+html body > main#portfolio {
+  display: block; }
+  html body > main#portfolio > p {
+    width: auto;
+    text-align: center;
+    margin: 0 auto 20% auto; }
+    @media (min-width: 769px) and (max-width: 1366px) {
+      html body > main#portfolio > p {
+        padding: 15% 0; } }
+    @media (min-width: 1366px) {
+      html body > main#portfolio > p {
+        padding: 25% 0;
+        font-size: 2em; } }
+  html body > main#portfolio section.project {
+    margin: 5% 0; }
+    html body > main#portfolio section.project picture {
+      flex: 1; }
+      html body > main#portfolio section.project picture img {
+        border: 0px;
+        border-radius: 0px; }
+    html body > main#portfolio section.project section.description {
+      flex: 2;
+      align-items: flex-start;
+      text-align: left; }
+      html body > main#portfolio section.project section.description h4 {
+        flex: 1; }
+      html body > main#portfolio section.project section.description p {
+        margin: 10px 0;
+        flex: 2; }
+      html body > main#portfolio section.project section.description i {
+        color: #fff9ff; }
+      html body > main#portfolio section.project section.description i:hover {
+        color: #fff247; }
+
+html body > main#links section {
+  flex-direction: column; }
+
+html body > main#italent {
+  display: block; }
+  html body > main#italent section {
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 5%;
+    padding: 3%;
+    flex-direction: column;
+    justify-content: flex-start; }
+    html body > main#italent section > p {
+      width: auto;
+      text-align: center;
+      margin: 0 auto 20px auto; }
+    html body > main#italent section ul {
+      padding: 0px 15%; }
+html body footer#italent {
+  display: none; }
+
+html {
+  height: 100%; }
+  html body {
+    height: 100%;
+    font-family: 'Nunito','Droid Sans', sans-serif;
+    background-color: #111111;
+    background-image: url(../images/background.png);
+    background-repeat: no-repeat; }
+    @media (min-width: 1366px), (min-width: 769px) and (max-width: 1366px) {
+      html body {
+        background-size: cover; } }
+    html body a, html body a:visited {
+      color: inherit;
+      text-decoration: none; }
+    html body > main {
+      width: 100%;
+      color: #fff9ff; }
+      @media (min-width: 1366px), (min-width: 769px) and (max-width: 1366px) {
+        html body > main {
+          height: 90%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center; } }
+      html body > main h1 {
+        font-family: 'WC';
+        font-size: 3em;
+        text-align: center;
+        align-self: center; }
+        @media (min-width: 1366px), (min-width: 769px) and (max-width: 1366px) {
+          html body > main h1 {
+            display: block;
+            font-size: 7em;
+            margin-top: 50px; } }
+      html body > main h2 {
+        font-size: 5em;
+        color: #fff9ff;
+        font-family: BlackoutInverse;
+        text-align: center; }
+        @media (min-width: 1366px), (min-width: 769px) and (max-width: 1366px) {
+          html body > main h2 {
+            display: none; } }
+      html body > main h3 {
+        font-size: 5em;
+        text-align: center;
+        color: #392a6d;
+        margin-bottom: 30px; }
+      html body > main h4 {
+        color: #fff247;
+        font-size: 2em; }
+      html body > main h5 {
+        color: #3B5998; }
+      html body > main section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 30px; }
+        @media (min-width: 1366px), (min-width: 769px) and (max-width: 1366px) {
+          html body > main section {
+            flex-direction: row;
+            align-items: center; } }
+        html body > main section picture {
+          flex: 1; }
+          html body > main section picture img {
+            border: 5px solid #FFF;
+            box-shadow: 0px 0px 5px #CCC;
+            margin-bottom: 2%;
+            border-radius: 50%; }
+        html body > main section section {
+          display: flex;
+          flex: 3;
+          flex-direction: column;
+          margin: 10px 30px; }
+          @media (min-width: 1366px), (min-width: 769px) and (max-width: 1366px) {
+            html body > main section section {
+              padding: 0 30px; } }
+          html body > main section section p {
+            flex: 1;
+            text-align: left; }
+      html body > main i, html body > main i:visited {
+        color: #111111; }
+      html body > main i:hover {
+        color: #fff247; }
+      html body > main section {
+        text-align: center;
+        margin: 10px 30px; }
+    html body main#homepage h1 {
+      display: none; }
+      @media (min-width: 1366px), (min-width: 769px) and (max-width: 1366px) {
+        html body main#homepage h1 {
+          flex: 1;
+          display: block; } }
+    html body main#homepage h2 {
+      flex: 2;
+      align-self: center; }
+      @media (min-width: 1366px), (min-width: 769px) and (max-width: 1366px) {
+        html body main#homepage h2 {
+          display: block; } }
+    html body .dl_button {
+      text-align: center;
+      border: 1px solid #111111;
+      border-radius: 5px;
+      width: 60%;
+      padding: 5px;
+      margin: 20px auto 0 auto;
+      background: white;
+      color: #111111; }
+      @media (min-width: 769px) and (max-width: 1366px) {
+        html body .dl_button {
+          width: 20%; } }
+      @media (min-width: 1366px) {
+        html body .dl_button {
+          width: 12%; } }
+
+/*# sourceMappingURL=style.css.map */

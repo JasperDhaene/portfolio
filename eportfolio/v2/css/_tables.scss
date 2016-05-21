@@ -1,0 +1,27 @@
+@import 'colours';
+
+html {
+    body {
+        section {
+            table{
+                thead{
+                    font-size: 5em;
+                    color: $red;
+                }
+                
+                tbody{
+                    tr.CV_head {
+                        font-size: 3em;
+                        td:first-child{
+                            color: $bright-yellow;
+                        }
+                    }
+                    
+                    tr.CV_sub {
+                        font-size: 2em;
+                    }
+                }
+            }                 
+        }
+    }
+}

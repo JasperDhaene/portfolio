@@ -1,0 +1,116 @@
+/*
+kleurenpalet: grijs (#666) - lichtgrijs (#aeaca8) - donker roze (#de6581) - zwart - gebroken wit (#eee)
+*/
+
+
+/*
+STAP 1:
+zorg ervoor dat width en heigth gelden voor content - padding - border 
+bij de gepaste elementen (zie HTML)
+*/
+
+li {
+    
+    display: inline;
+    text-decoration: none;
+}
+
+li > a {
+    text-decoration: none;
+    color: black;
+}
+
+ul {
+    
+    padding: 5px;
+    background: #aeaca8;
+    margin: 0px;
+    
+}
+
+img {
+    margin: 0px;
+    width: 100%;
+    height: 10em;
+}
+
+figure {
+    float: left;
+    border: 1px solid #aeaca8 ;
+    padding: 10px;
+    margin 10px;
+    width: 20%;
+}
+
+div.description { 
+    float: left;
+    width: 70%;
+    padding: 10px;
+    margin: 10px;
+}
+
+.description h2 {
+    color: #666;
+    margin: 5px 0px;
+}
+
+.description h3 {
+    color: #de6581;
+    margin: 5px 0px;
+}
+
+.popular-recipes {
+    float: right;
+    width: 30%;
+    
+}
+
+section .courses {
+    width: 70%;
+    
+}
+
+aside {
+    width: 30%;
+    
+}
+/* 
+STAP 2:
+Opmaak
+*/
+
+
+/* 
+STAP 3: opmaak header (kleur - bg-image - hoogte afbeelding header)
+*/
+
+
+/* 
+STAP 4: Menubalk */
+
+
+/*
+STAP 5
+opmaak afbeeldingen en beschrijving:
+
+kadertje eromheen met ruimte tussen kader en afbeelding
+beschrijving komt rechts van de afbeelding te staan
+en extra ruimte tussen afbeelding en beschrijving
+figcaption kleiner lettertype
+extra ruimte tussen description en rechtse content
+*/
+
+
+/*
+STAP 6
+Overige opmaak
+opmaak anchors in aside
+meer afstand tussen recipes en contact
+*/
+
+
+/*
+STAP 7: maak de gepaste blokken los uit de normale flow 
+Courses (image en beschrijving) 70% en Recipes en contact 30%
+Let op voor container collapse
+*/

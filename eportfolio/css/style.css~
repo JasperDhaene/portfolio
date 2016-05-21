@@ -1,0 +1,208 @@
+@font-face {
+  font-family: 'BlackoutInverse';
+  src: url("../fonts/Blackout-2am.ttf");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'WC';
+  src: url("../fonts/WCManoNegraBta.otf");
+  font-weight: normal;
+  font-style: normal; }
+html body main {
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  overflow: hidden; }
+  html body main a, html body main a:visited, html body main a:active {
+    color: #F8F8F8;
+    text-decoration: none; }
+  html body main nav {
+    position: fixed;
+    top: 50vh;
+    right: 20px;
+    mix-blend-mode: difference;
+    z-index: 42; }
+    html body main nav a:hover {
+      text-decoration: line-through; }
+    html body main nav ul {
+      list-style: none;
+      color: white; }
+      html body main nav ul li {
+        margin: 5px 0;
+        text-align: right; }
+        html body main nav ul li i {
+          margin: 0 0 0 10px; }
+      html body main nav ul:hover a {
+        visibility: visible; }
+  html body main header {
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover; }
+    html body main header h1 {
+      padding: 10vh 0;
+      display: block;
+      text-align: center;
+      font-size: 15em;
+      font-family: 'WC';
+      color: #111111; }
+    html body main header h2 {
+      margin: 15vh 0;
+      display: block;
+      text-align: center;
+      font-size: 12em;
+      font-family: 'BlackoutInverse';
+      color: mediumaquamarine; }
+  html body main > section {
+    height: 100vh;
+    margin: 25vh 0;
+    padding: 0 20px; }
+    html body main > section h3 {
+      font-size: 14em;
+      word-spacing: 40vw;
+      width: 40vw;
+      float: left; }
+      html body main > section h3 span.accent {
+        color: aquamarine; }
+    html body main > section ul {
+      padding: 10vh 0;
+      float: left;
+      list-style: none;
+      font-size: 3em; }
+      html body main > section ul li {
+        margin: 40px 0; }
+        html body main > section ul li span[lang="ja"] {
+          font-size: .3em;
+          -ms-writing-mode: tb-rl;
+          -webkit-writing-mode: vertical-rl;
+          -moz-writing-mode: vertical-rl;
+          -ms-writing-mode: vertical-rl;
+          writing-mode: vertical-rl; }
+    html body main > section#skills {
+      width: 100vw;
+      background-color: #707070;
+      height: 70vh;
+      box-sizing: border-box; }
+      html body main > section#skills h3 {
+        float: none;
+        width: auto;
+        text-align: center; }
+      html body main > section#skills h4 {
+        text-align: center;
+        margin: 100px 0 0 0; }
+      html body main > section#skills > div {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center; }
+        html body main > section#skills > div div {
+          width: 25vw;
+          text-align: center;
+          color: #F8F8F8; }
+          html body main > section#skills > div div img {
+            width: 100px;
+            height: 100px; }
+          html body main > section#skills > div div h4 {
+            margin: 10px 0;
+            font-size: 2em;
+            color: #0affb9; }
+    html body main > section div.work_container {
+      float: left;
+      height: 80vh;
+      //width: 69vw;
+      overflow: hidden;
+      border-left: 5px solid #111111; }
+      html body main > section div.work_container section.project {
+        height: 100vh;
+        width: 70vw;
+        position: absolute;
+        visibility: hidden;
+        background-color: inherit;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center; }
+        html body main > section div.work_container section.project picture {
+          padding: 20px;
+          flex: 2;
+          text-align: center; }
+          html body main > section div.work_container section.project picture img {
+            text-align: center;
+            border: 5px solid #111111; }
+        html body main > section div.work_container section.project section.description {
+          flex: 4;
+          padding: 0 15vw; }
+          html body main > section div.work_container section.project section.description h4 {
+            font-size: 5em;
+            text-align: center; }
+          html body main > section div.work_container section.project section.description p {
+            margin: 50px 0; }
+          html body main > section div.work_container section.project section.description a, html body main > section div.work_container section.project section.description a:visited, html body main > section div.work_container section.project section.description a:active {
+            color: #111111;
+            text-decoration: none; }
+          html body main > section div.work_container section.project section.description a:hover {
+            color: aquamarine; }
+          html body main > section div.work_container section.project section.description i {
+            display: inline; }
+          html body main > section div.work_container section.project section.description h5 {
+            display: inline; }
+      html body main > section div.work_container section.project_stub {
+        justify-content: flex-start; }
+        html body main > section div.work_container section.project_stub h4 {
+          visibility: visible; }
+    html body main > section#work ul {
+      float: left;
+      display: inline;
+      font-size: 1em;
+      padding: 10px;
+      box-sizing: border-box; }
+      html body main > section#work ul li {
+        font-size: 3em;
+        padding: 20px; }
+      html body main > section#work ul li.work_active {
+        background-color: aquamarine; }
+    html body main > section#about {
+      height: 100vh;
+      color: black; }
+      html body main > section#about .alt {
+        display: none; }
+    html body main > section#interested {
+      height: 100vh; }
+    html body main > section#skills {
+      border-top: 1px solid #878787; }
+    html body main > section#work h3 {
+      font-family: 'WC';
+      float: none; }
+    html body main > section#empty {
+      height: 200vh; }
+  html body main footer {
+    padding: 0 0 10vh 0;
+    background-color: #111111;
+    color: white;
+    /*
+    a, a:visited,a:active{
+        color: $white;
+        text-decoration: none;
+    }
+    */ }
+    html body main footer h4 {
+      display: block;
+      text-align: center;
+      padding: 10px 0 10vh 0;
+      font-size: 4em;
+      color: white; }
+    html body main footer div {
+      display: flex;
+      justify-content: space-around;
+      align-items: center; }
+      html body main footer div a {
+        font-size: 3em; }
+        html body main footer div a span {
+          color: #4c4c4c; }
+        html body main footer div a i {
+          font-size: .3em; }
+        html body main footer div a:nth-child(1):hover i {
+          color: #3B5998; }
+        html body main footer div a:nth-child(2):hover i {
+          color: #3f3c3c; }
+        html body main footer div a:nth-child(3):hover i {
+          color: #CC181E; }
+
+/*# sourceMappingURL=style.css.map */
