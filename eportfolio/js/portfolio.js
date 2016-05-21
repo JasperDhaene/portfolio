@@ -32,7 +32,7 @@ $(document).ready(function(){
         $("section." + project_class).css('visibility', 'visible');
     });
     
-    
+    console.log("start I AM effect");
     //I AM EFFECT
     setInterval(function(){ 
         //SWITCH H3
@@ -61,18 +61,7 @@ $(document).ready(function(){
     }, 5000);
     
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
     
     
 }); 

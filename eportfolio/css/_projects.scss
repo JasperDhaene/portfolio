@@ -15,7 +15,7 @@ section#projects {
 
         li {
             font-size: 3em;
-            padding: 20px;
+            padding: 20px ;
 
             @media screen and (min-width: $laptop) {
                 font-size: 1.5em;
@@ -32,6 +32,7 @@ section#projects {
         font-family: 'WC';
         float: none;
         font-size: 10em;
+        word-spacing: normal;
 
         @media screen and (min-width: $laptop) {
             font-size: 5em;

@@ -1,0 +1,38 @@
+section > ul { //ABOUT
+    padding: 10vh 0;
+    float: left;
+    list-style: none;
+    font-size: 3em;
+
+    @media screen and (min-width: $laptop) {
+        padding: 0;
+    }
+
+    li {
+        margin: 40px 0;
+
+        span[lang="ja"] {
+            font-size: .3em;
+
+            -ms-writing-mode: tb-rl;
+            -webkit-writing-mode: vertical-rl;
+            -moz-writing-mode: vertical-rl;
+            -ms-writing-mode: vertical-rl;
+            writing-mode: vertical-rl;
+
+
+        }
+    }
+}   
+
+section#about {
+    height: 100vh;
+    //background-color: $white;
+    //border-top: 1px solid $mid-gray;
+
+    color: black;
+
+    .alt {
+        display: none;
+    }
+}

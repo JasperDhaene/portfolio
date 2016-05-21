@@ -1,53 +1,176 @@
 <!doctype html>
 <html>
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-    <title>Jasper D'haene</title>
-    <link href="../css/browser_reset.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Nunito|Droid+Sans">
-    <link href="../css/style.css" rel="stylesheet">
+    <title>Jasper D'haene | Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/browser_reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:700" rel="stylesheet" type="text/css">
+    <script src="../js/smooth-scroll.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="../js/portfolio.js"></script>
 </head>
+
 <body>
+    <main>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a><i class="fa fa-circle-o" aria-hidden="true"></i></li>
+                <li><a href="about.html">About</a><i class="fa fa-circle-o" aria-hidden="true"></i></li>
+                <li><a href="italent.html">iTalent</a><i class="fa fa-circle-o" aria-hidden="true"></i></li>
+                <li><a href="projects.html">Projects</a><i class="fa fa-circle-o" aria-hidden="true"></i></li>
+                <li><a href="#cv">Curriculum Vitae</a><i class="fa fa-circle-o" aria-hidden="true"></i></li>
+                <li><a href="links.html">Links</a><i class="fa fa-circle-o" aria-hidden="true"></i></li>
+                <li><a href="#contact">Contact</a><i class="fa fa-circle-o" aria-hidden="true"></i></li>
+            </ul>
+        </nav>
+        <header>
+            <h1>Jasper D'haene</h1>
+            <h2>Student Applied Computer Science</h2>
+        </header>
 
-<header>
-    <nav>
-        <ul>
-            <li>
-                <h6><a href="../index.html">Jasper D'haene</a></h6>
-                <i class="fa fa-bars fa-1x"></i>
-            </li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="i1talent.html">ITalent</a></li>
-            <li class="current"><a href="cv.html">Curriculum Vitae</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="hobbies.html">Hobbies</a></li>
-            <li><a href="links.html">Links</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
-</header>
-<main>        
-    <h2>Curriculum Vitae</h2>
+        <section id="cv">
+            <h3>Curriculum Vitae</h3>
+            <ul>
+                <li>Adres: Sint-Rembertlaan 15, 8820 Torhout</li>
+                <li>Gsm: 0477/427092</li>
+                <li>Email: jasper.dhaene[at]gmail.com</li>
+                <li>Github: <a href="https://github.com/JasperDhaene">https://github.com/JasperDhaene</a></li>
+            </ul>
+            <section>
+                <table>
+                    <!-- EDUCATION !-->
+                    <thead>
+                        <tr>
+                            <td colspan="2">+ Education</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- SMIK !-->
+                        <tr class="CV_head">
+                            <td>Sint-Martinus Instituut(SMIK)</td>
+                            <td>Koekelare,Belgium</td>
+                        </tr>
+                        <tr class="CV_sub">
+                            <td>High school</td>
+                            <td>2006-2010</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">- Two years of Latin</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">- Two years of Mathematics-Science</td>
+                        </tr>
 
-    <p>
-        Interested in my work? Press the button below to view my curriculum vitae.
-    </p>
-    <p class="dl_button">
-        <a href="../files/cv.pdf">
-            <i class="fa fa-download"></i> Download Curriculum Vitae
-        </a>
-    </p>
-</main>
-    
-<footer>
-    
-    <a href="https://www.facebook.com/jasper.dhaene">facebook</a>
-    <a href="https://github.com/JasperDhaene">github</a>
-    <a href="mailto:jasper.dhaene@gmail.com">mail</a>
-    
-</footer>
+                        <!-- Sint-Rembertcollege !-->
+                        <tr class="CV_head">
+                            <td>Sint-Rembertcollege</td>
+                            <td>Torhout,Belgium</td>
+                        </tr>
+                        <tr class="CV_sub">
+                            <td>High school</td>
+                            <td>2010-2012</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">- Two years of Economy-Mathematics</td>
+                            <nav>
+                        </tr>
 
+                        <!-- University Ghent !-->
+                        <tr class="CV_head">
+                            <td>Ghent University (UGENT)</td>
+                            <td>Ghent,Belgium</td>
+                        </tr>
+                        <tr class="CV_sub">
+                            <td>Bachelor of science in computer science</td>
+                            <td>2012-2015</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">- Unfinished Bachelor thesis</td>
+                        </tr>
+
+                        <!-- University college Ghent !-->
+                        <tr class="CV_head">
+                            <td>University College Ghent (HoGent)</td>
+                            <td>Ghent,Belgium</td>
+                        </tr>
+                        <tr class="CV_sub">
+                            <td>Professional bachelor in Applied Computer Science</td>
+                            <td>2015-PRESENT</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">- Ongoing</td>
+                        </tr>
+                    </tbody>
+                    <!-- SKILLS !-->
+                    <thead>
+                        <tr>
+                            <td colspan="2">+ Skills</td>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Languages</td>
+                            <td>Dutch (Native), English (Very good), French (conversational)</td>
+                        </tr>
+
+                        <tr>
+                            <td>Programming</td>
+                            <td>Java, C/C++</td>
+                        </tr>
+
+                        <tr>
+                            <td>Scripting</td>
+                            <td>Bash, Python, AWK, SED</td>
+                        </tr>
+
+                        <tr>
+                            <td>Web</td>
+                            <td>HTML5, CSS3, SASS, Javascript</td>
+                        </tr>
+
+                        <tr>
+                            <td>Data visualization</td>
+                            <td>D3.js</td>
+                        </tr>
+
+                        <tr>
+                            <td>Databases</td>
+                            <td>MySQL, Fuzzy Databases</td>
+                        </tr>
+
+                        <tr>
+                            <td>Miscellaneous</td>
+                            <td>git, Latex, UML, RegEx</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </section>
+
+        </section>
+
+        <!--
+            <section id="empty"></section>
+        !-->
+
+        <footer id="contact">
+            <h4>Contact</h4>
+            <div>
+                <a href="https://www.facebook.com/jasper.dhaene"><i class="fa fa-facebook fa-1x"></i><span>/</span> Jasper D'haene</a>
+                <a href="https://github.com/JasperDhaene"><i class="fa fa-github-alt fa-1x"></i><span>/</span> JasperDhaene</a>
+                <a href="mailto:jasper.dhaene@gmail.com"><i class="fa fa-envelope fa-1x"></i><span>/</span> jasper.dhaene[at]gmail.com</a>
+            </div>
+        </footer>
+        <script>
+            smoothScroll.init();
+        </script>
+    </main>
 </body>
+
 </html>

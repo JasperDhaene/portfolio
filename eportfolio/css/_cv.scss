@@ -1,0 +1,31 @@
+section#cv {
+    height: auto;
+    
+    h3 {
+        font-family: 'WC';
+        float: none;
+        font-size: 10em;
+        word-spacing: normal;
+
+        @media screen and (min-width: $laptop) {
+            font-size: 5em;
+        }
+    }
+    
+    ul {
+        font-size: 2em;
+        float: none;
+        
+        li {
+            margin: 20px 0;
+            
+            a{
+                color: $dark;
+                
+                &:hover {
+                    color: aquamarine;
+                }
+            }
+        }
+    }
+}

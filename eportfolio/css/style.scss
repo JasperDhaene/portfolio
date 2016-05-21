@@ -23,6 +23,8 @@ $laptop: 1200px;
 @import 'footer';
 @import 'projects';
 @import 'skills';
+@import 'about';
+@import 'cv';
 
 html {
     body {
@@ -42,8 +44,6 @@ html {
                 right: 20px;
                 mix-blend-mode: difference;
                 z-index: 42;
-                
-                
                 
                 a:hover {
                     text-decoration: line-through;
@@ -121,58 +121,21 @@ html {
                     }
                 }
                 
-                > ul { //ABOUT
-                    padding: 10vh 0;
-                    float: left;
+
+                
+                ul {
                     list-style: none;
-                    font-size: 3em;
-                    
-                    @media screen and (min-width: $laptop) {
-                        padding: 0;
-                    }
-                    
-                    li {
-                        margin: 40px 0;
-                        
-                        span[lang="ja"] {
-                            font-size: .3em;
-                            
-                            -ms-writing-mode: tb-rl;
-                            -webkit-writing-mode: vertical-rl;
-                            -moz-writing-mode: vertical-rl;
-                            -ms-writing-mode: vertical-rl;
-                            writing-mode: vertical-rl;
-
-
-                        }
-                    }
-                }   
+                }
+                
                 
             } 
                 
-            &#about {
-                height: 100vh;
-                //background-color: $white;
-                //border-top: 1px solid $mid-gray;
-
-                color: black;
-
-                .alt {
-                    display: none;
-                }
-            }
-
             &#interested {
                 height: 100vh;
                 //background-color: $light-gray;
             }
             &#skills {
                 border-top: 1px solid $dark-gray;
-
-            }
-            &#projects {
-
-
 
             }
 

@@ -135,7 +135,8 @@ section#projects {
   section#projects h3 {
     font-family: 'WC';
     float: none;
-    font-size: 10em; }
+    font-size: 10em;
+    word-spacing: normal; }
     @media screen and (min-width: 1200px) {
       section#projects h3 {
         font-size: 5em; } }
@@ -234,6 +235,50 @@ section#skills {
           section#skills > div div h4 {
             font-size: 1.5em; } }
 
+section > ul {
+  padding: 10vh 0;
+  float: left;
+  list-style: none;
+  font-size: 3em; }
+  @media screen and (min-width: 1200px) {
+    section > ul {
+      padding: 0; } }
+  section > ul li {
+    margin: 40px 0; }
+    section > ul li span[lang="ja"] {
+      font-size: .3em;
+      -ms-writing-mode: tb-rl;
+      -webkit-writing-mode: vertical-rl;
+      -moz-writing-mode: vertical-rl;
+      -ms-writing-mode: vertical-rl;
+      writing-mode: vertical-rl; }
+
+section#about {
+  height: 100vh;
+  color: black; }
+  section#about .alt {
+    display: none; }
+
+section#cv {
+  height: auto; }
+  section#cv h3 {
+    font-family: 'WC';
+    float: none;
+    font-size: 10em;
+    word-spacing: normal; }
+    @media screen and (min-width: 1200px) {
+      section#cv h3 {
+        font-size: 5em; } }
+  section#cv ul {
+    font-size: 2em;
+    float: none; }
+    section#cv ul li {
+      margin: 20px 0; }
+      section#cv ul li a {
+        color: #111111; }
+        section#cv ul li a:hover {
+          color: aquamarine; }
+
 html body main {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   overflow: hidden; }
@@ -288,28 +333,8 @@ html body main {
           font-size: 7em; } }
       html body main > section h3 span.accent {
         color: aquamarine; }
-    html body main > section > ul {
-      padding: 10vh 0;
-      float: left;
-      list-style: none;
-      font-size: 3em; }
-      @media screen and (min-width: 1200px) {
-        html body main > section > ul {
-          padding: 0; } }
-      html body main > section > ul li {
-        margin: 40px 0; }
-        html body main > section > ul li span[lang="ja"] {
-          font-size: .3em;
-          -ms-writing-mode: tb-rl;
-          -webkit-writing-mode: vertical-rl;
-          -moz-writing-mode: vertical-rl;
-          -ms-writing-mode: vertical-rl;
-          writing-mode: vertical-rl; }
-  html body main#about {
-    height: 100vh;
-    color: black; }
-    html body main#about .alt {
-      display: none; }
+    html body main > section ul {
+      list-style: none; }
   html body main#interested {
     height: 100vh; }
   html body main#skills {
