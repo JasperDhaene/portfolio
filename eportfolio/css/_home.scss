@@ -1,0 +1,38 @@
+header#home {
+    height: 100vh;
+    //background-image: url(../images/background.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    h1 {
+        padding: 10vh 0;
+        display: block;
+        text-align: center;
+        font-size: 15em;
+
+        font-family: 'WC';
+        color: $dark;
+
+        @media screen and (min-width: $laptop) {
+            padding: 5vh 0;
+            font-size: 10em;
+        }
+    }
+
+    h2 {
+        margin: 15vh 0;
+        display: block;
+        text-align: center;
+        font-size: 12em;
+        font-family: 'BlackoutInverse';
+        //font-family: 'Yanone Kaffeesatz', sans-serif;
+        color: mediumaquamarine;
+
+        @media screen and (min-width: $laptop) {
+            font-size: 8em;
+            margin: 15vh 0 0 0;
+        }
+    }
+
+
+}

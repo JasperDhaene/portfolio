@@ -15,9 +15,14 @@ $facebook-blue: #3B5998;
 $github-gray: #3f3c3c;
 $gmail-red: #CC181E;
 
-@import 'fonts';
-@import 'italent';
+$laptop: 1200px;
 
+@import 'fonts';
+@import 'home';
+@import 'italent';
+@import 'footer';
+@import 'projects';
+@import 'skills';
 
 html {
     body {
@@ -94,33 +99,6 @@ html {
                 }
             }
             
-            header#home {
-                height: 100vh;
-                //background-image: url(../images/background.jpeg);
-                background-repeat: no-repeat;
-                background-size: cover;
-                
-                h1 {
-                    padding: 10vh 0;
-                    display: block;
-                    text-align: center;
-                    font-size: 15em;
-                    
-                    font-family: 'WC';
-                    color: $dark;
-                }
-                
-                h2 {
-                    margin: 15vh 0;
-                    display: block;
-                    text-align: center;
-                    font-size: 12em;
-                    font-family: 'BlackoutInverse';
-                    //font-family: 'Yanone Kaffeesatz', sans-serif;
-                    color: mediumaquamarine;
-                }
-            }
-            
             
             > section {
                 height: 100vh;
@@ -133,17 +111,26 @@ html {
                     width: 40vw;
                     float: left;
                     
+                    @media screen and (min-width: $laptop) {
+                        font-size: 7em;
+                    }
+                    
                     
                     span.accent {
                         color: aquamarine;
                     }
                 }
                 
-                > ul {
+                > ul { //ABOUT
                     padding: 10vh 0;
                     float: left;
                     list-style: none;
                     font-size: 3em;
+                    
+                    @media screen and (min-width: $laptop) {
+                        padding: 0;
+                    }
+                    
                     li {
                         margin: 40px 0;
                         
@@ -159,226 +146,43 @@ html {
 
                         }
                     }
-                }
+                }   
                 
-                &#skills{
-                    
-                    width: 100vw;
-                    //flex-wrap: wrap;
-                    background-color: $green-flashy-contrast-light;
-                    height: 70vh;
-                    box-sizing: border-box;
-                    h3 {
-                        float: none;
-                        width: auto;
-                        text-align: center;
-                    }
-                    
-                    h4 {
-                        text-align: center;
-                        margin: 100px 0 0 0;
-                    }
-                    
-                    > div {
-                        display: flex;
-                        flex-direction: row;
-                        justify-content: space-around;
-                        align-items: center;    
-                        div {
-                            width: 25vw;
-                            //height: 200px;
-                            text-align: center;
-                            color: $white;
-                            img {
-                                width: 100px;
-                                height: 100px;
-                            }
-                            
-                            
+            } 
+                
+            &#about {
+                height: 100vh;
+                //background-color: $white;
+                //border-top: 1px solid $mid-gray;
 
-                            h4 {
-                                margin: 10px 0;
-                                font-size: 2em;
-                                color: $green-flashy-dark;
-                            }    
-                        }
-                    }
-                }
-                
-                div.work_container {
-                    float: left;
-                    height: 80vh;
-                    //width: 69vw;
-                    overflow: hidden;
-                    //background-color: $light-gray;
-                    border-left: 5px solid $dark;
-                    
-                    section.project {
-                        height: 100vh;
-                        width: 69vw;
-                        position: absolute;
-                        visibility: hidden;
-                        background-color: inherit;
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: space-around;
-                        align-items: center;
-                        
-                        
-                        picture {
-                            padding: 20px;
-                            flex: 2;
-                            img {
-                                text-align: center;
-                                border: 5px solid $dark;
-                            }
-                            text-align: center;
-                        }
-                        
-                        section.description{
-                            flex: 4;
-                            padding: 0 15vw;
-                            
-                            h4 {
-                                font-size: 5em;
-                                text-align: center;
-                            }
-                            
-                            p {
-                                margin: 50px 0;
-                            }
-                            
-                            a, a:visited,a:active {
-                                color: $dark;
-                                text-decoration: none;
-                            }
-                            
-                            a:hover {
-                                color: aquamarine;
-                            }
-                            
-                            i {
-                                display: inline;
-                            }
-                            
-                            h5 {
-                                display: inline;
-                            }
-                        }
-                    }
-                    
-                    section.project_stub {
-                        justify-content: flex-start;
-                        h4 {
-                            visibility: visible;
-                        }
-                    }
-                }
-                
-                &#projects ul {
-                    float: left;
-                    //width: 30vw;
-                    display: inline;
-                    font-size: 1em;
-                    padding: 10px;
-                    box-sizing: border-box;
-                    li {
-                        font-size: 3em;
-                        padding: 20px;
-                    }
-                    li.work_active {
-                        background-color: aquamarine;
-                    }
-                    
-                }
-                
-                
-                &#about {
-                    height: 100vh;
-                    //background-color: $white;
-                    //border-top: 1px solid $mid-gray;
-                    
-                    color: black;
-                    
-                    .alt {
-                        display: none;
-                    }
-                }
-                
-                &#interested {
-                    height: 100vh;
-                    //background-color: $light-gray;
-                }
-                &#skills {
-                    border-top: 1px solid $dark-gray;
-                    
-                }
-                &#projects {
-                    margin: 0 0 20vh 0;
-                    h3 {
-                        font-family: 'WC';
-                        float: none;
-                        font-size: 10em;
-                    }
-                }
-                
-                &#empty {
-                    height: 200vh;
-                }
-                
-            }
-            
-            footer {
-                padding: 0 0 10vh 0;
-                background-color: $dark;
-                color: white;
-                /*
-                a, a:visited,a:active{
-                    color: $white;
-                    text-decoration: none;
-                }
-                */
-                
-                h4{
-                    display: block;
-                    text-align: center;
-                    padding: 10px 0 10vh 0;
-                    font-size: 4em;
-                    color: white;
-                }
-                
-                div {
-                    display: flex;
-                    justify-content: space-around;
-                    align-items: center;
-                    
-                    a{
-                        font-size: 3em;
-                        span {
-                            color: $gray;
-                        }
-                        
-                        i {
-                            font-size: .3em;
-                            //color: $white!important;
-                        }
-                        
-                        &:nth-child(1):hover i {
-                            color: $facebook-blue;
-                        }
-                        &:nth-child(2):hover i {
-                            color: $github-gray;
-                        }
-                        &:nth-child(3):hover i {
-                            color: $gmail-red;
-                        }
-                        
-                    }
+                color: black;
+
+                .alt {
+                    display: none;
                 }
             }
-            
-            
+
+            &#interested {
+                height: 100vh;
+                //background-color: $light-gray;
+            }
+            &#skills {
+                border-top: 1px solid $dark-gray;
+
+            }
+            &#projects {
+
+
+
+            }
+
+            &#empty {
+                height: 200vh;
+            }
+                
         }
-       
+
+
     }
+
 }

@@ -8,6 +8,33 @@
   src: url("../fonts/WCManoNegraBta.otf");
   font-weight: normal;
   font-style: normal; }
+header#home {
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  header#home h1 {
+    padding: 10vh 0;
+    display: block;
+    text-align: center;
+    font-size: 15em;
+    font-family: 'WC';
+    color: #111111; }
+    @media screen and (min-width: 1200px) {
+      header#home h1 {
+        padding: 5vh 0;
+        font-size: 10em; } }
+  header#home h2 {
+    margin: 15vh 0;
+    display: block;
+    text-align: center;
+    font-size: 12em;
+    font-family: 'BlackoutInverse';
+    color: mediumaquamarine; }
+    @media screen and (min-width: 1200px) {
+      header#home h2 {
+        font-size: 8em;
+        margin: 15vh 0 0 0; } }
+
 html body main > section#italent {
   height: auto;
   padding: 0 20px; }
@@ -45,6 +72,167 @@ html body main > section#italent {
     html body main > section#italent > article .inline_title {
       width: auto;
       margin-right: 10vw; }
+
+footer {
+  padding: 0 0 10vh 0;
+  background-color: #111111;
+  color: white;
+  /*
+  a, a:visited,a:active{
+      color: $white;
+      text-decoration: none;
+  }
+  */ }
+  footer h4 {
+    display: block;
+    text-align: center;
+    padding: 10px 0 10vh 0;
+    font-size: 4em;
+    color: white; }
+    @media screen and (min-width: 1200px) {
+      footer h4 {
+        font-size: 2em; } }
+  footer div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center; }
+    footer div a {
+      font-size: 3em; }
+      footer div a span {
+        color: #4c4c4c; }
+      footer div a i {
+        font-size: .3em; }
+      footer div a:nth-child(1):hover i {
+        color: #3B5998; }
+      footer div a:nth-child(2):hover i {
+        color: #3f3c3c; }
+      footer div a:nth-child(3):hover i {
+        color: #CC181E; }
+      @media screen and (min-width: 1200px) {
+        footer div a {
+          font-size: 1.5em; } }
+
+section#projects {
+  margin: 0 0 20vh 0; }
+  section#projects ul {
+    float: left;
+    display: inline;
+    font-size: 1em;
+    padding: 10px;
+    box-sizing: border-box; }
+    @media screen and (min-width: 1200px) {
+      section#projects ul {
+        padding: 5px; } }
+    section#projects ul li {
+      font-size: 3em;
+      padding: 20px; }
+      @media screen and (min-width: 1200px) {
+        section#projects ul li {
+          font-size: 1.5em;
+          margin: 0; } }
+    section#projects ul li.work_active {
+      background-color: aquamarine; }
+  section#projects h3 {
+    font-family: 'WC';
+    float: none;
+    font-size: 10em; }
+    @media screen and (min-width: 1200px) {
+      section#projects h3 {
+        font-size: 5em; } }
+
+div.work_container {
+  float: left;
+  height: 80vh;
+  overflow: hidden;
+  border-left: 5px solid #111111; }
+  div.work_container section.project {
+    height: 100vh;
+    width: 69vw;
+    position: absolute;
+    visibility: hidden;
+    background-color: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center; }
+    div.work_container section.project picture {
+      padding: 20px;
+      flex: 2;
+      text-align: center; }
+      div.work_container section.project picture img {
+        text-align: center;
+        border: 5px solid #111111; }
+      @media screen and (min-width: 1200px) {
+        div.work_container section.project picture {
+          padding: 0; } }
+    div.work_container section.project section.description {
+      flex: 4;
+      padding: 0 15vw; }
+      @media screen and (min-width: 1200px) {
+        div.work_container section.project section.description {
+          padding: 0 10vw; } }
+      div.work_container section.project section.description h4 {
+        font-size: 5em;
+        text-align: center; }
+        @media screen and (min-width: 1200px) {
+          div.work_container section.project section.description h4 {
+            font-size: 2em; } }
+      div.work_container section.project section.description p {
+        margin: 50px 0; }
+        @media screen and (min-width: 1200px) {
+          div.work_container section.project section.description p {
+            margin: 30px 0; } }
+      div.work_container section.project section.description a, div.work_container section.project section.description a:visited, div.work_container section.project section.description a:active {
+        color: #111111;
+        text-decoration: none; }
+      div.work_container section.project section.description a:hover {
+        color: aquamarine; }
+      div.work_container section.project section.description i {
+        display: inline; }
+        @media screen and (min-width: 1200px) {
+          div.work_container section.project section.description i {
+            font-size: 1em; } }
+      div.work_container section.project section.description h5 {
+        display: inline; }
+        @media screen and (min-width: 1200px) {
+          div.work_container section.project section.description h5 {
+            font-size: .5em; } }
+  div.work_container section.project_stub {
+    justify-content: flex-start; }
+    div.work_container section.project_stub h4 {
+      visibility: visible; }
+
+section#skills {
+  width: 100vw;
+  background-color: #707070;
+  height: 90vh;
+  box-sizing: border-box; }
+  section#skills h3 {
+    float: none;
+    width: auto;
+    text-align: center; }
+  section#skills h4 {
+    text-align: center;
+    margin: 100px 0 0 0; }
+  section#skills > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center; }
+    section#skills > div div {
+      width: 25vw;
+      text-align: center;
+      color: #F8F8F8; }
+      section#skills > div div img {
+        width: 100px;
+        height: 100px; }
+      section#skills > div div h4 {
+        margin: 10px 0;
+        font-size: 2em;
+        color: #0affb9; }
+        @media screen and (min-width: 1200px) {
+          section#skills > div div h4 {
+            font-size: 1.5em; } }
 
 html body main {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -87,24 +275,6 @@ html body main {
       font-size: 2em;
       font-family: 'BlackoutInverse';
       color: mediumaquamarine; }
-  html body main header#home {
-    height: 100vh;
-    background-repeat: no-repeat;
-    background-size: cover; }
-    html body main header#home h1 {
-      padding: 10vh 0;
-      display: block;
-      text-align: center;
-      font-size: 15em;
-      font-family: 'WC';
-      color: #111111; }
-    html body main header#home h2 {
-      margin: 15vh 0;
-      display: block;
-      text-align: center;
-      font-size: 12em;
-      font-family: 'BlackoutInverse';
-      color: mediumaquamarine; }
   html body main > section {
     height: 100vh;
     padding: 0 20px; }
@@ -113,6 +283,9 @@ html body main {
       word-spacing: 40vw;
       width: 40vw;
       float: left; }
+      @media screen and (min-width: 1200px) {
+        html body main > section h3 {
+          font-size: 7em; } }
       html body main > section h3 span.accent {
         color: aquamarine; }
     html body main > section > ul {
@@ -120,6 +293,9 @@ html body main {
       float: left;
       list-style: none;
       font-size: 3em; }
+      @media screen and (min-width: 1200px) {
+        html body main > section > ul {
+          padding: 0; } }
       html body main > section > ul li {
         margin: 40px 0; }
         html body main > section > ul li span[lang="ja"] {
@@ -129,136 +305,16 @@ html body main {
           -moz-writing-mode: vertical-rl;
           -ms-writing-mode: vertical-rl;
           writing-mode: vertical-rl; }
-    html body main > section#skills {
-      width: 100vw;
-      background-color: #707070;
-      height: 70vh;
-      box-sizing: border-box; }
-      html body main > section#skills h3 {
-        float: none;
-        width: auto;
-        text-align: center; }
-      html body main > section#skills h4 {
-        text-align: center;
-        margin: 100px 0 0 0; }
-      html body main > section#skills > div {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center; }
-        html body main > section#skills > div div {
-          width: 25vw;
-          text-align: center;
-          color: #F8F8F8; }
-          html body main > section#skills > div div img {
-            width: 100px;
-            height: 100px; }
-          html body main > section#skills > div div h4 {
-            margin: 10px 0;
-            font-size: 2em;
-            color: #0affb9; }
-    html body main > section div.work_container {
-      float: left;
-      height: 80vh;
-      overflow: hidden;
-      border-left: 5px solid #111111; }
-      html body main > section div.work_container section.project {
-        height: 100vh;
-        width: 69vw;
-        position: absolute;
-        visibility: hidden;
-        background-color: inherit;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center; }
-        html body main > section div.work_container section.project picture {
-          padding: 20px;
-          flex: 2;
-          text-align: center; }
-          html body main > section div.work_container section.project picture img {
-            text-align: center;
-            border: 5px solid #111111; }
-        html body main > section div.work_container section.project section.description {
-          flex: 4;
-          padding: 0 15vw; }
-          html body main > section div.work_container section.project section.description h4 {
-            font-size: 5em;
-            text-align: center; }
-          html body main > section div.work_container section.project section.description p {
-            margin: 50px 0; }
-          html body main > section div.work_container section.project section.description a, html body main > section div.work_container section.project section.description a:visited, html body main > section div.work_container section.project section.description a:active {
-            color: #111111;
-            text-decoration: none; }
-          html body main > section div.work_container section.project section.description a:hover {
-            color: aquamarine; }
-          html body main > section div.work_container section.project section.description i {
-            display: inline; }
-          html body main > section div.work_container section.project section.description h5 {
-            display: inline; }
-      html body main > section div.work_container section.project_stub {
-        justify-content: flex-start; }
-        html body main > section div.work_container section.project_stub h4 {
-          visibility: visible; }
-    html body main > section#projects ul {
-      float: left;
-      display: inline;
-      font-size: 1em;
-      padding: 10px;
-      box-sizing: border-box; }
-      html body main > section#projects ul li {
-        font-size: 3em;
-        padding: 20px; }
-      html body main > section#projects ul li.work_active {
-        background-color: aquamarine; }
-    html body main > section#about {
-      height: 100vh;
-      color: black; }
-      html body main > section#about .alt {
-        display: none; }
-    html body main > section#interested {
-      height: 100vh; }
-    html body main > section#skills {
-      border-top: 1px solid #878787; }
-    html body main > section#projects {
-      margin: 0 0 20vh 0; }
-      html body main > section#projects h3 {
-        font-family: 'WC';
-        float: none;
-        font-size: 10em; }
-    html body main > section#empty {
-      height: 200vh; }
-  html body main footer {
-    padding: 0 0 10vh 0;
-    background-color: #111111;
-    color: white;
-    /*
-    a, a:visited,a:active{
-        color: $white;
-        text-decoration: none;
-    }
-    */ }
-    html body main footer h4 {
-      display: block;
-      text-align: center;
-      padding: 10px 0 10vh 0;
-      font-size: 4em;
-      color: white; }
-    html body main footer div {
-      display: flex;
-      justify-content: space-around;
-      align-items: center; }
-      html body main footer div a {
-        font-size: 3em; }
-        html body main footer div a span {
-          color: #4c4c4c; }
-        html body main footer div a i {
-          font-size: .3em; }
-        html body main footer div a:nth-child(1):hover i {
-          color: #3B5998; }
-        html body main footer div a:nth-child(2):hover i {
-          color: #3f3c3c; }
-        html body main footer div a:nth-child(3):hover i {
-          color: #CC181E; }
+  html body main#about {
+    height: 100vh;
+    color: black; }
+    html body main#about .alt {
+      display: none; }
+  html body main#interested {
+    height: 100vh; }
+  html body main#skills {
+    border-top: 1px solid #878787; }
+  html body main#empty {
+    height: 200vh; }
 
 /*# sourceMappingURL=style.css.map */

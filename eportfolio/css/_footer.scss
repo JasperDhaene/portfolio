@@ -1,0 +1,56 @@
+footer {
+                padding: 0 0 10vh 0;
+                background-color: $dark;
+                color: white;
+                /*
+                a, a:visited,a:active{
+                    color: $white;
+                    text-decoration: none;
+                }
+                */
+                
+                h4{
+                    display: block;
+                    text-align: center;
+                    padding: 10px 0 10vh 0;
+                    font-size: 4em;
+                    color: white;
+                    
+                    @media screen and (min-width: $laptop) {
+                        font-size: 2em;
+                    }
+                }
+                
+                div {
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                    
+                    a{
+                        font-size: 3em;
+                        span {
+                            color: $gray;
+                        }
+                        
+                        i {
+                            font-size: .3em;
+                            //color: $white!important;
+                        }
+                        
+                        &:nth-child(1):hover i {
+                            color: $facebook-blue;
+                        }
+                        &:nth-child(2):hover i {
+                            color: $github-gray;
+                        }
+                        &:nth-child(3):hover i {
+                            color: $gmail-red;
+                        }
+                        
+                        @media screen and (min-width: $laptop) {
+                            font-size: 1.5em;
+                        }
+                        
+                    }
+                }
+            }
