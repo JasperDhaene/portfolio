@@ -34,43 +34,36 @@
         </header>
 
 
-        
-        <section id="skills">
-            <h3>Skills</h3>
-            <div>
-                <div>
-                    <i class="fa fa-html5 fa-5x" aria-hidden="true"></i>
-                    <h4>HTML5</h4>
-                </div>
-                <div>
-                    <img src="images/sass_inverse.png">
-                    <h4>Sass, CSS3</h4>
-                </div>
-                <div>
-                    <img src="images/jquery_inverse.png">
-                    <h4>Javascript, JQuery</h4>
-                </div>
-                <div>
-                    <i class="fa fa-code fa-5x" aria-hidden="true"></i>
-                    <h4>Java, C, C++</h4>
-                </div>
 
-            </div>
-            <h4><a href="cv/cv.pdf"><i class="fa fa-file-text" aria-hidden="true"></i> Find out what else I can do</a></h4>
-                    
+        <section id="site">
+            <h3>Home</h3>
+            <p>This is an assignment for a course I take at the University College of Ghent (HoGent), called 'Webapplicaties I' (Webapplications I). It will also be used as a tool for another course called 'iTalent'. All completed assignments for iTalent will be available on its <a href="html/italent.html">dedicated page</a>.</p>
+            <p>This website is written in English except for the iTalent page. The reason for this is two-fold. Firstly, I've written everything in English because I want it to be internationally viewable, and secondly, because the de facto language in the field of Computer Science is English. The assignments for iTalent will not be translated into English because this is a course given in Dutch and all assignments were to be submitted in Dutch.</p>
         </section>
-        
+
         <footer id="contact">
-                <h4>Contact</h4>
-                <div>
-                    <a href="https://www.facebook.com/jasper.dhaene"><i class="fa fa-facebook fa-1x"></i><span>/</span> Jasper D'haene</a>
-                    <a href="https://github.com/JasperDhaene"><i class="fa fa-github-alt fa-1x"></i><span>/</span> JasperDhaene</a>
-                    <a><i class="fa fa-envelope fa-1x"></i><span>/</span> jasper.dhaene[at]gmail.com</a>
-                </div>
-            </footer>
-            <script>
-                smoothScroll.init();
-            </script>
+            <h4>Contact</h4>
+            <div>
+                <a href="https://www.facebook.com/jasper.dhaene"><i class="fa fa-facebook fa-1x"></i><span>/</span> Jasper D'haene</a>
+                <a href="https://github.com/JasperDhaene"><i class="fa fa-github-alt fa-1x"></i><span>/</span> JasperDhaene</a>
+                <a><i class="fa fa-envelope fa-1x"></i><span>/</span> jasper.dhaene[at]gmail.com</a>
+            </div>
+
+            <form action="mailto:jasper.dhaene.w3902@student.hogent.be" method="post">
+                <input type="text" name="name" placeholder="Name">
+                <input type="email" name="email" placeholder="Email" required="required">
+                <input type="text" name="subject" placeholder="Subject">
+                <textarea name="message" placeholder="Enter message here" required="required"></textarea>
+                <label for="work">Work</label>
+                <input type="radio" id="work" name="type" value="work" />
+                <label for="personal">Personal</label>
+                <input type="radio" id="personal" name="type" value="personal" />
+                <input type="submit" value="Send">
+            </form>
+        </footer>
+        <script>
+            smoothScroll.init();
+        </script>
     </main>
 </body>
 

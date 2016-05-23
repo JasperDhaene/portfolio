@@ -36,7 +36,7 @@
 
         <section id="about">
             <h3>I AM <span class="accent">A...</span><span class="alt">INTERESTED IN...</span></h3>
-            
+
             <ul>
                 <li>Student @ HoGent, Belgium</li>
                 <li>Longboard rider</li>
@@ -48,23 +48,82 @@
             </ul>
 
         </section>
+        <section id="about_text">
+        <picture>
+            <source srcset="../images/about.png" media="(min-width: 1367px)">
+           <!-- <source srcset="../images/about_small.jpg"> !-->
+            <img src="../images/about.png" alt="About picture">
+        </picture>
+        <section>
+            <p> 
+            Hi! My name is Jasper D'haene. Most of the time, I'm located somewhere in Ghent, Belgium. This is rather convenient, because I'm currently enrolled at Hogeschool Ghent, studying Applied Computer Science. Before studying at Hogeschool Ghent, I went undercover for three years at the University of Ghent. Unfortunately, I had to reveal my true identity when I discovered I wasn't cut out to be an academically trained Computer Scientist. On the bright side, I gathered a lot of II (Interesting Intelligence), so the mission was not a complete bust. I've been fascinated by computers since I was in elementary school, so I think it's pretty awesome I can now tell them to do stuff.
+            </p>
+            <p>
+                Among my daily habits is meditation. But not everything I do is serious business! In my free time, I'm known to watch a lot of movies/TV, and enjoy savouring a good whiskey. Or reading up on some (eastern) philosophy. Okay, that's kinda serious. But cruising on my longboard is pure relaxation, trust me. (but not when it's raining; that's just dangerous!)  
+            </p>
+        </section>
 
-        
+    </section>
+
+        <section id="hobbies">
+            <h3>Hobbies</h3>
+            <ul>
+                <li>
+                    <picture>
+                        <source srcset="../images/longboard.png" media="(min-width: 1367px)">
+                        <source srcset="../images/longboard_small.png">
+                        <img src="../images/longboard_small.png">
+                    </picture>
+                    <section>
+                        <h4>Longboarding</h4>
+                        <p>
+                            Whether it's to get from point A to point B or for some tricks, I'm always down for some longboarding.
+                        </p>
+                    </section>
+                </li>
+                <li>
+                    <picture>
+                        <source srcset="../images/tv.png" media="(min-width: 1367px)">
+                        <source srcset="../images/tv_small.png">
+                        <img src="../images/tv_small.png">
+                    </picture>
+                    <section>
+                        <h4>Watching TV series and movies</h4>
+                        <p>
+                            I like watching TV. A lot. My favorite shows at the moment are Game of Thrones, Flash and Luther. My favorite movies are... Well, i saw quite a lot of them, so i don't really keep track of my favorites.
+                        </p>
+                    </section>
+                </li>
+            </ul>
+        </section>
+
+
         <!--
             <section id="empty"></section>
         !-->
-        
+
         <footer id="contact">
-                <h4>Contact</h4>
-                <div>
-                    <a href="https://www.facebook.com/jasper.dhaene"><i class="fa fa-facebook fa-1x"></i><span>/</span> Jasper D'haene</a>
-                    <a href="https://github.com/JasperDhaene"><i class="fa fa-github-alt fa-1x"></i><span>/</span> JasperDhaene</a>
-                    <a href="mailto:jasper.dhaene@gmail.com"><i class="fa fa-envelope fa-1x"></i><span>/</span> jasper.dhaene[at]gmail.com</a>
-                </div>
-            </footer>
-            <script>
-                smoothScroll.init();
-            </script>
+            <h4>Contact</h4>
+            <div>
+                <a href="https://www.facebook.com/jasper.dhaene"><i class="fa fa-facebook fa-1x"></i><span>/</span> Jasper D'haene</a>
+                <a href="https://github.com/JasperDhaene"><i class="fa fa-github-alt fa-1x"></i><span>/</span> JasperDhaene</a>
+                <a><i class="fa fa-envelope fa-1x"></i><span>/</span> jasper.dhaene[at]gmail.com</a>
+            </div>
+            <form action="mailto:jasper.dhaene.w3902@student.hogent.be" method="post">
+                <input type="text" name="name" placeholder="Name">
+                <input type="email" name="email" placeholder="Email" required="required">
+                <input type="text" name="subject" placeholder="Subject">
+                <textarea name="message" placeholder="Enter message here" required="required"></textarea>
+                <label for="work">Work</label>
+                <input type="radio" id="work" name="type" value="work" />
+                <label for="personal">Personal</label>
+                <input type="radio" id="personal" name="type" value="personal" />
+                <input type="submit" value="Send">
+            </form>
+        </footer>
+        <script>
+            smoothScroll.init();
+        </script>
     </main>
 </body>
 

@@ -1,0 +1,20 @@
+section#site{
+    width: 100vw;
+    //flex-wrap: wrap;
+    background-color: $green-flashy-contrast-light;
+    height: 60vh;
+    box-sizing: border-box;
+    h3 {
+        float: none;
+        width: auto;
+        text-align: center;
+    }
+    p {
+        width: 70vw;
+        text-align: center;
+        padding: 30px 10vw;
+    }
+
+    
+    
+}

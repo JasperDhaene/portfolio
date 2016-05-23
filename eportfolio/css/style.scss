@@ -22,9 +22,11 @@ $laptop: 1200px;
 @import 'italent';
 @import 'footer';
 @import 'projects';
-@import 'skills';
+@import 'site';
 @import 'about';
 @import 'cv';
+@import 'links';
+@import 'hobbies';
 
 html {
     body {
@@ -34,8 +36,8 @@ html {
             overflow: hidden;
             
             a, a:visited,a:active{
-                    color: $white;
-                    text-decoration: none;
+                color: $white;
+                text-decoration: none;
             }
             
             nav {
@@ -47,6 +49,7 @@ html {
                 
                 a:hover {
                     text-decoration: line-through;
+                    color: white;
                 }
                 
                 ul {
@@ -56,10 +59,6 @@ html {
                     li {
                         margin: 5px 0;
                         text-align: right;
-                        
-                        a{
-                            //visibility: hidden;    
-                        }
                         
                         i {
                             margin: 0 0 0 10px;
@@ -114,7 +113,6 @@ html {
                     @media screen and (min-width: $laptop) {
                         font-size: 7em;
                     }
-                    
                     
                     span.accent {
                         color: aquamarine;

@@ -182,8 +182,19 @@
                 <div>
                     <a href="https://www.facebook.com/jasper.dhaene"><i class="fa fa-facebook fa-1x"></i><span>/</span> Jasper D'haene</a>
                     <a href="https://github.com/JasperDhaene"><i class="fa fa-github-alt fa-1x"></i><span>/</span> JasperDhaene</a>
-                    <a href="mailto:jasper.dhaene@gmail.com"><i class="fa fa-envelope fa-1x"></i><span>/</span> jasper.dhaene[at]gmail.com</a>
+                    <a><i class="fa fa-envelope fa-1x"></i><span>/</span> jasper.dhaene[at]gmail.com</a>
                 </div>
+                <form action="mailto:jasper.dhaene.w3902@student.hogent.be" method="post">
+                <input type="text" name="name" placeholder="Name">
+                <input type="email" name="email" placeholder="Email" required="required">
+                <input type="text" name="subject" placeholder="Subject">
+                <textarea name="message" placeholder="Enter message here" required="required"></textarea>
+                <label for="work">Work</label>
+                <input type="radio" id="work" name="type" value="work" />
+                <label for="personal">Personal</label>
+                <input type="radio" id="personal" name="type" value="personal" />
+                <input type="submit" value="Send">
+            </form>
             </footer>
             <script>
                 smoothScroll.init();

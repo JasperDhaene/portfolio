@@ -115,6 +115,13 @@
                     </p>
 
                 </section>
+                <section>
+                    <h3>Videogetuigenis</h3>
+                    
+                    <video width="270" height="480" controls>
+                        <source src="../video/getuigenis.mp4" type="video/mp4">
+                    </video>
+                </section>
             </article>
 
             <article id="opdracht2">
@@ -249,6 +256,19 @@ Benodigde competenties </h5>
                     <p>Je kunt hem <a href="../cv/cv.pdf">hier</a> vinden</p>
                 </section>
             </article>
+
+            <article id="opdracht3">
+                <h2 id="opdracht3">Opdracht 3</h2>
+                <h3>O grote leider Jonas en zijn 13 apostelen</h3>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/-LMYtQC6Olg" frameborder="0" allowfullscreen></iframe>
+                <h3>Persoonlijk aandeel in talentendag</h3>
+                <h4>Logboek</h4>
+                
+                <h3>Persoonlijke reflectie voorbereiding talentendag + bijgeleerde talenten</h3>
+                <p>Lorem ipsum nog iets</p>
+            </article>
+
+
         </section>
 
         <footer id="contact">
@@ -256,8 +276,19 @@ Benodigde competenties </h5>
             <div>
                 <a href="https://www.facebook.com/jasper.dhaene"><i class="fa fa-facebook fa-1x"></i><span>/</span> Jasper D'haene</a>
                 <a href="https://github.com/JasperDhaene"><i class="fa fa-github-alt fa-1x"></i><span>/</span> JasperDhaene</a>
-                <a href="mailto:jasper.dhaene@gmail.com"><i class="fa fa-envelope fa-1x"></i><span>/</span> jasper.dhaene[at]gmail.com</a>
+                <a><i class="fa fa-envelope fa-1x"></i><span>/</span> jasper.dhaene[at]gmail.com</a>
             </div>
+            <form action="mailto:jasper.dhaene.w3902@student.hogent.be" method="post">
+                <input type="text" name="name" placeholder="Name">
+                <input type="email" name="email" placeholder="Email" required="required">
+                <input type="text" name="subject" placeholder="Subject">
+                <textarea name="message" placeholder="Enter message here" required="required"></textarea>
+                <label for="work">Work</label>
+                <input type="radio" id="work" name="type" value="work" />
+                <label for="personal">Personal</label>
+                <input type="radio" id="personal" name="type" value="personal" />
+                <input type="submit" value="Send">
+            </form>
         </footer>
         <script>
             smoothScroll.init();
