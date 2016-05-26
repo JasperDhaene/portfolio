@@ -1,11 +1,20 @@
 section#cv {
     height: auto;
     
+    a{
+        color: $dark-gray;
+
+        &:hover {
+            color: aquamarine;
+        }
+    }
+    
     h3 {
         font-family: 'WC';
         float: none;
         font-size: 10em;
         word-spacing: normal;
+        width: auto;
 
         @media #{$laptop} {
             font-size: 5em;
@@ -19,13 +28,7 @@ section#cv {
         li {
             margin: 20px 0;
             
-            a{
-                color: $black;
-                
-                &:hover {
-                    color: aquamarine;
-                }
-            }
+            
         }
     }
     
@@ -42,6 +45,10 @@ section#cv {
         
         tr.CV_sub {
             font-size: 1.5em;
+        }
+        
+        td {
+            padding-right: 30px;
         }
     }
 }

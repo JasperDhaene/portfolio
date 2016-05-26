@@ -1,5 +1,6 @@
 section#projects {
     margin: 0 0 20vh 0;
+    box-sizing: border-box;
     
     ul {
         float: left;
@@ -16,6 +17,7 @@ section#projects {
         li {
             font-size: 3em;
             padding: 20px ;
+            box-sizing: border-box;
 
             @media #{$laptop} {
                 font-size: 1.5em;

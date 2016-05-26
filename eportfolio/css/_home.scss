@@ -21,6 +21,7 @@ header#home {
 
     h2 {
         margin: 10vh 0;
+        
         display: block;
         text-align: center;
         font-size: 12em;
@@ -31,6 +32,12 @@ header#home {
         @media #{$laptop} {
             font-size: 8em;
             margin: 15vh 0 0 0;
+        }
+    }
+
+    @-moz-document url-prefix() {
+        h2 {
+            margin: 0;
         }
     }
 

@@ -34,7 +34,9 @@ header#home {
       header#home h2 {
         font-size: 8em;
         margin: 15vh 0 0 0; } }
-
+@-moz-document url-prefix() {
+  header#home h2 {
+    margin: 0; } }
 html body main > section#italent {
   height: auto;
   padding: 0 20px; }
@@ -46,7 +48,7 @@ html body main > section#italent {
     font-family: 'WC';
     font-size: 10em;
     word-spacing: normal;
-    width: 25vw;
+    width: 30vw;
     display: inline-block; }
     @media screen and (min-width: 769px) and (max-width: 1366px) {
       html body main > section#italent h1 {
@@ -75,6 +77,9 @@ html body main > section#italent {
       font-size: 1.5em; }
     html body main > section#italent ul li {
       margin: 40px 20px; }
+  html body main > section#italent span {
+    text-decoration: underline;
+    color: #878787; }
   html body main > section#italent ul#nav {
     display: inline-block;
     width: 20vw; }
@@ -173,7 +178,8 @@ footer {
       border-bottom-width: 2px; }
 
 section#projects {
-  margin: 0 0 20vh 0; }
+  margin: 0 0 20vh 0;
+  box-sizing: border-box; }
   section#projects ul {
     float: left;
     display: inline;
@@ -185,7 +191,8 @@ section#projects {
         padding: 5px; } }
     section#projects ul li {
       font-size: 3em;
-      padding: 20px; }
+      padding: 20px;
+      box-sizing: border-box; }
       @media screen and (min-width: 769px) and (max-width: 1366px) {
         section#projects ul li {
           font-size: 1.5em;
@@ -281,6 +288,8 @@ section#about {
   height: 100vh;
   line-height: 1.2;
   color: black; }
+  section#about h3 {
+    font-size: 13em; }
   section#about .alt {
     display: none; }
   section#about > ul {
@@ -337,11 +346,16 @@ section#hobbies > ul li {
 
 section#cv {
   height: auto; }
+  section#cv a {
+    color: #878787; }
+    section#cv a:hover {
+      color: aquamarine; }
   section#cv h3 {
     font-family: 'WC';
     float: none;
     font-size: 10em;
-    word-spacing: normal; }
+    word-spacing: normal;
+    width: auto; }
     @media screen and (min-width: 769px) and (max-width: 1366px) {
       section#cv h3 {
         font-size: 5em; } }
@@ -350,10 +364,6 @@ section#cv {
     float: none; }
     section#cv ul li {
       margin: 20px 0; }
-      section#cv ul li a {
-        color: #111111; }
-        section#cv ul li a:hover {
-          color: aquamarine; }
   section#cv table {
     margin: 30px 0; }
     section#cv table thead {
@@ -362,6 +372,8 @@ section#cv {
       font-size: 2em; }
     section#cv table tr.CV_sub {
       font-size: 1.5em; }
+    section#cv table td {
+      padding-right: 30px; }
 
 section#links a {
   color: #878787; }

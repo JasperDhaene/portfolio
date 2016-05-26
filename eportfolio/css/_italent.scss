@@ -13,6 +13,7 @@ $green-flashy-contrast-light: #707070;
 $facebook-blue: #3B5998;
 $github-gray: #3f3c3c;
 $gmail-red: #CC181E;
+
 html {
     body {
         main {
@@ -35,7 +36,7 @@ html {
                     font-family: 'WC';
                     font-size: 10em;
                     word-spacing: normal;
-                    width: 25vw;
+                    width: 30vw;
                     display: inline-block;
                     
                     @media #{$laptop} {
@@ -89,6 +90,11 @@ html {
                         }
                     }
                     
+                }
+
+                span {
+                    text-decoration: underline;
+                    color: $dark-gray;
                 }
 
                 ul#nav {
