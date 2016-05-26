@@ -7,7 +7,7 @@ section#cv {
         font-size: 10em;
         word-spacing: normal;
 
-        @media screen and (min-width: $laptop) {
+        @media #{$laptop} {
             font-size: 5em;
         }
     }

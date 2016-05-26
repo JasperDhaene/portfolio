@@ -15,7 +15,7 @@ section#about {
         list-style: none;
         font-size: 3em;
 
-        @media screen and (min-width: $laptop) {
+        @media #{$laptop} {
             padding: 0;
         }
 

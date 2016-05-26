@@ -15,7 +15,8 @@ $facebook-blue: #3B5998;
 $github-gray: #3f3c3c;
 $gmail-red: #CC181E;
 
-$laptop: 1200px;
+$laptop: "screen and (min-width: 769px) and (max-width: 1366px)";
+$desktop: "screen and (min-width: 1366px)";
 
 @import 'fonts';
 @import 'home';
@@ -110,7 +111,7 @@ html {
                     width: 40vw;
                     float: left;
                     
-                    @media screen and (min-width: $laptop) {
+                    @media #{$laptop} {
                         font-size: 7em;
                     }
                     
