@@ -24,7 +24,7 @@ header#home {
         padding: 5vh 0;
         font-size: 10em; } }
   header#home h2 {
-    margin: 15vh 0;
+    margin: 10vh 0;
     display: block;
     text-align: center;
     font-size: 12em;
@@ -126,12 +126,8 @@ footer {
         footer div a {
           font-size: 1.5em; } }
   footer form {
-    padding: 10% 0;
+    padding: 10vh 25vw;
     width: 50%; }
-    @media screen and (min-width: 769px) and (max-width: 1366px) {
-      footer form {
-        padding: 10vh 30%;
-        width: 50%; } }
     footer form input[type=submit], footer form input[type=text], footer form textarea, footer form input[type=email] {
       display: block;
       font-size: 1.5em;
@@ -262,7 +258,7 @@ div.work_container {
 section#site {
   width: 100vw;
   background-color: #707070;
-  height: 60vh;
+  height: 70vh;
   box-sizing: border-box; }
   section#site h3 {
     float: none;
@@ -275,6 +271,7 @@ section#site {
 
 section#about {
   height: 100vh;
+  line-height: 1.2;
   color: black; }
   section#about .alt {
     display: none; }
@@ -295,16 +292,40 @@ section#about {
         -moz-writing-mode: vertical-rl;
         -ms-writing-mode: vertical-rl;
         writing-mode: vertical-rl; }
+@-moz-document url-prefix() {
+  section#about h3 {
+    font-size: 12em; } }
+section#about_text {
+  height: 20vh;
+  padding: 10vh 0; }
+  section#about_text picture {
+    width: 20vw;
+    text-align: center;
+    float: left;
+    clear: both; }
+    section#about_text picture img {
+      border-radius: 50%; }
+  section#about_text section {
+    width: 80vw; }
+    section#about_text section p {
+      margin: 5vh 0; }
 
-section#about_text picture {
-  width: 20vw;
+section#hobbies h3 {
+  width: 100vw; }
+section#hobbies picture {
+  width: 15vw;
   text-align: center;
   float: left;
-  clear: both; }
-  section#about_text picture img {
+  clear: both;
+  margin: 5vh 0; }
+  section#hobbies picture img {
     border-radius: 50%; }
-section#about_text section {
-  width: 80vw; }
+section#hobbies > ul li {
+  margin: 100px 0; }
+  section#hobbies > ul li section {
+    width: 70vw;
+    float: left;
+    margin: 10vh; }
 
 section#cv {
   height: auto; }
@@ -342,20 +363,6 @@ section#links h3 {
   float: none; }
 section#links > section {
   margin: 20px; }
-
-section#hobbies h3 {
-  width: 100vw; }
-section#hobbies picture {
-  width: 15vw;
-  text-align: center;
-  float: left;
-  clear: both; }
-  section#hobbies picture img {
-    border-radius: 50%; }
-section#hobbies > ul li {
-  margin: 100px 0; }
-  section#hobbies > ul li section {
-    width: 70vw; }
 
 html body main {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;

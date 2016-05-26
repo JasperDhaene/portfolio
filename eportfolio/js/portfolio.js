@@ -32,6 +32,7 @@ $(document).ready(function(){
         $("section." + project_class).css('visibility', 'visible');
     });
     
+    /*
     console.log("start I AM effect");
     //I AM EFFECT
     setInterval(function(){ 
@@ -57,9 +58,10 @@ $(document).ready(function(){
             var replacement = e.substr(0,index) + '<span class="accent">'+ e.charAt(index) + '</span>' + e.substr(index+1);
             element.innerHTML = replacement;
         });*/
+    /*
         
     }, 5000);
-    
+    */
     
 
     

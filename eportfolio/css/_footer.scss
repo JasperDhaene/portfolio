@@ -57,13 +57,8 @@ footer {
     }
     
     form {
-        padding: 10% 0;
+        padding: 10vh 25vw;
         width: 50%;
-
-        @media #{$laptop} {
-            padding: 10vh 30%;
-            width: 50%;
-        }
 
 
         input[type=submit] {
