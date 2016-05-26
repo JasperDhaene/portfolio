@@ -359,7 +359,8 @@ section#hobbies > ul li {
 
 html body main {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  overflow: hidden; }
+  overflow: hidden;
+  background-color: white; }
   html body main a, html body main a:visited, html body main a:active {
     color: #F8F8F8;
     text-decoration: none; }
@@ -370,11 +371,9 @@ html body main {
     mix-blend-mode: difference;
     z-index: 42; }
     html body main nav a:hover {
-      text-decoration: line-through;
-      color: white; }
+      text-decoration: line-through; }
     html body main nav ul {
-      list-style: none;
-      color: white; }
+      list-style: none; }
       html body main nav ul li {
         margin: 5px 0;
         text-align: right; }

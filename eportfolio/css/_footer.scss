@@ -1,6 +1,6 @@
 footer {
     padding: 0 0 10vh 0;
-    background-color: $dark;
+    background-color: $black;
     color: white;
     /*
     a, a:visited,a:active{
@@ -74,8 +74,8 @@ footer {
             box-sizing: border-box;
             font-weight: bold;
             background: aquamarine;
-            color: $dark;
-            border: 2px solid $dark;
+            color: $black;
+            border: 2px solid $black;
             border-radius: 10px;
             text-align: center;
             width: 50%;
@@ -105,7 +105,7 @@ footer {
 
         input[type=submit]:hover {
             background-color: $white;
-            color: $dark;
+            color: $black;
         }
 
         input[type=text]:hover, input[type=email]:hover {

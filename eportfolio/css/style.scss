@@ -1,4 +1,4 @@
-$dark: #111111;
+$black: #111111;
 $white: #F8F8F8;
 $gray: #4c4c4c;
 $light-gray: #f3f3f3;
@@ -35,6 +35,7 @@ html {
             
             font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
             overflow: hidden;
+            background-color: white;
             
             a, a:visited,a:active{
                 color: $white;
@@ -50,12 +51,12 @@ html {
                 
                 a:hover {
                     text-decoration: line-through;
-                    color: white;
+                    //color: white;
                 }
                 
                 ul {
                     list-style: none;
-                    color: white;
+                    //color: white;
                     
                     li {
                         margin: 5px 0;
@@ -85,7 +86,7 @@ html {
                     font-size: 2em;
                     
                     font-family: 'WC';
-                    color: $dark;
+                    color: $black;
                 }
                 
                 h2 {
