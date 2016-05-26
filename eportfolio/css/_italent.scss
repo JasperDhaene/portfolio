@@ -35,6 +35,8 @@ html {
                     font-family: 'WC';
                     font-size: 10em;
                     word-spacing: normal;
+                    width: 25vw;
+                    display: inline-block;
                     
                     @media #{$laptop} {
                         font-size: 5em;
@@ -52,6 +54,7 @@ html {
                     width: 100vw;
                     word-spacing: normal;
                     margin: 20px 0;
+                    font-size: 10em;
                     
                     @media #{$laptop} {
                         font-size: 5em;
@@ -84,6 +87,15 @@ html {
                         @media #{$laptop} {
                             //font-size: .5em;
                         }
+                    }
+                    
+                }
+
+                ul#nav {
+                    display: inline-block;
+                    width: 20vw;
+                    li {
+                        margin: 0;    
                     }
                     
                 }
