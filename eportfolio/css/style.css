@@ -71,6 +71,8 @@ html body main > section#italent {
   html body main > section#italent h5 {
     color: #878787;
     font-size: 1em; }
+  html body main > section#italent p {
+    margin: 5vh 0; }
   html body main > section#italent ul {
     list-style: none; }
     html body main > section#italent ul strong {
@@ -97,8 +99,6 @@ html body main > section#italent {
     width: 85vw; }
     html body main > section#italent > article > section {
       margin: 30px 0; }
-      html body main > section#italent > article > section p {
-        margin: 10px 0; }
     html body main > section#italent > article section.inline_section {
       width: 40vw;
       margin: 0 0 10vh 0;
