@@ -1,0 +1,18 @@
+nav li, nav li a:link, nav li a:visited, nav li a:hover, nav li a:active {
+    color: gray;
+}
+
+header#home h2{
+    margin: 0;
+
+}
+
+section.description{
+    width: 60vw;
+}
+
+section#about h3 {
+    @media #{$laptop} {
+        font-size: 7em;
+    }
+}

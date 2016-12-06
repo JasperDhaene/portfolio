@@ -80,9 +80,16 @@ html body main > section#italent {
   html body main > section#italent span {
     text-decoration: underline;
     color: #878787; }
+  html body main > section#italent span.yearselection {
+    text-decoration: none;
+    display: inline-block; }
+    html body main > section#italent span.yearselection:hover {
+      color: aquamarine; }
+  html body main > section#italent span.current {
+    color: red; }
   html body main > section#italent ul#nav {
     display: inline-block;
-    width: 20vw; }
+    width: 55vw; }
     html body main > section#italent ul#nav li {
       margin: 0; }
   html body main > section#italent > article {
@@ -290,6 +297,9 @@ section#about {
   color: black; }
   section#about h3 {
     font-size: 13em; }
+    @media screen and (min-width: 769px) and (max-width: 1366px) {
+      section#about h3 {
+        font-size: 7em; } }
   section#about .alt {
     display: none; }
   section#about > ul {
@@ -311,7 +321,10 @@ section#about {
         writing-mode: vertical-rl; }
 @-moz-document url-prefix() {
   section#about h3 {
-    font-size: 12em; } }
+    font-size: 12em; }
+    @media screen and (min-width: 769px) and (max-width: 1366px) {
+      section#about h3 {
+        font-size: 7em; } } }
 section#about_text {
   height: 20vh;
   padding: 10vh 0; }
@@ -327,22 +340,24 @@ section#about_text {
     section#about_text section p {
       margin: 5vh 0; }
 
-section#hobbies h3 {
-  width: 100vw; }
-section#hobbies picture {
-  width: 15vw;
-  text-align: center;
-  float: left;
-  clear: both;
-  margin: 5vh 0; }
-  section#hobbies picture img {
-    border-radius: 50%; }
-section#hobbies > ul li {
-  margin: 100px 0; }
-  section#hobbies > ul li section {
-    width: 70vw;
+section#hobbies {
+  height: 150vh; }
+  section#hobbies h3 {
+    width: 100vw; }
+  section#hobbies picture {
+    width: 15vw;
+    text-align: center;
     float: left;
-    margin: 10vh; }
+    clear: both;
+    margin: 5vh 0; }
+    section#hobbies picture img {
+      border-radius: 50%; }
+  section#hobbies > ul li {
+    margin: 100px 0; }
+    section#hobbies > ul li section {
+      width: 70vw;
+      float: left;
+      margin: 10vh; }
 
 section#cv {
   height: auto; }
@@ -391,6 +406,10 @@ html body main {
   html body main a, html body main a:visited, html body main a:active {
     color: #F8F8F8;
     text-decoration: none; }
+  html body main .languages {
+    position: absolute;
+    top: 5vh;
+    right: 10px; }
   html body main nav {
     position: fixed;
     top: 50vh;
@@ -446,5 +465,15 @@ html body main {
     border-top: 1px solid #878787; }
   html body main#empty {
     height: 200vh; }
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    html body main nav li, html body main nav li a:link, html body main nav li a:visited, html body main nav li a:hover, html body main nav li a:active {
+      color: gray; }
+    html body main header#home h2 {
+      margin: 0; }
+    html body main section.description {
+      width: 60vw; } }
+@media screen and (-ms-high-contrast: active) and (min-width: 769px) and (max-width: 1366px) {
+  html body main section#about h3 {
+    font-size: 7em; } }
 
 /*# sourceMappingURL=style.css.map */

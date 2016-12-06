@@ -97,9 +97,24 @@ html {
                     color: $dark-gray;
                 }
 
+                span.yearselection {
+                    text-decoration: none;
+                    display: inline-block;
+                    
+                    &:hover {
+                        color: aquamarine;
+                    }
+                }
+
+                span.current {
+                    color: red;
+                    
+                }
+
                 ul#nav {
                     display: inline-block;
-                    width: 20vw;
+                    width: 55vw;
+                    
                     li {
                         margin: 0;    
                     }
@@ -126,6 +141,7 @@ html {
                     .inline_title {
                         width: auto;
                         margin-right: 10vw;
+                        
                     }
                 }
                 

@@ -41,6 +41,13 @@ html {
                 text-decoration: none;
             }
             
+            .languages {
+                position: absolute;
+                //width: 5vw;
+                top: 5vh;
+                right: 10px;
+            }
+            
             nav {
                 position: fixed;
                 top: 50vh;
@@ -140,6 +147,28 @@ html {
 
             &#empty {
                 height: 200vh;
+            }
+        
+            //IE 10+ rules
+            @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+                nav li, nav li a:link, nav li a:visited, nav li a:hover, nav li a:active {
+                    color: gray;
+                }
+
+                header#home h2{
+                    margin: 0;
+
+                }
+
+                section.description{
+                    width: 60vw;
+                }
+                
+                section#about h3 {
+                    @media #{$laptop} {
+                        font-size: 7em;
+                    }
+                }
             }
                 
         }

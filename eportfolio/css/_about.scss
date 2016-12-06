@@ -7,6 +7,9 @@ section#about {
     
     h3 {
         font-size: 13em;
+        @media #{$laptop} {
+            font-size: 7em;
+        }
     }
 
     .alt {
@@ -43,6 +46,9 @@ section#about {
     @-moz-document url-prefix() {
         h3 {
             font-size: 12em;
+            @media #{$laptop} {
+                font-size: 7em;
+            }
         }
     }
 }
@@ -70,6 +76,7 @@ section#about_text {
 }
 
 section#hobbies {
+    height: 150vh;
     h3 {
         width: 100vw;
     }
