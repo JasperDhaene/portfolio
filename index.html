@@ -4,15 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <title>Jasper D'haene | Portfolio</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
     <link rel="stylesheet" href="css/browser_reset.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
     <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:700" rel="stylesheet" type="text/css">
-    <script src="/js/smooth-scroll.js"></script>
+    <script src="js/smooth-scroll.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-    <script src="/js/portfolio.js"></script>
+    <script src="js/portfolio.js"></script>
 </head>
 
 <body>
@@ -33,7 +33,12 @@
                     "speed": 1000,
                     "easing": "easeInOutCubic",
                     "offset": 0
-                }' href="#work">Work</a><i class="fa fa-circle-o" aria-hidden="true"></i></li>
+                }' href="#skills">Skills</a><i class="fa fa-circle-o" aria-hidden="true"></i></li>
+                <li><a data-scroll data-options='{
+                    "speed": 1000,
+                    "easing": "easeInOutCubic",
+                    "offset": 0
+                }' href="#work">Projects</a><i class="fa fa-circle-o" aria-hidden="true"></i></li>
                 <li><a data-scroll data-options='{
                     "speed": 1000,
                     "easing": "easeInOutCubic",
@@ -58,7 +63,7 @@
                 <li class="alt">Web design &amp; development </li>
                 <li class="alt">Mobile apps</li>
                 <li class="alt">Working magic with code</li>
-                <li class="alt">Deciphering the Japanese language <span lang="ja">不可能</span></li>
+                <!--<li class="alt">Deciphering the Japanese language <span lang="ja">不可能</span></li>!-->
             </ul>
 
         </section>
@@ -99,6 +104,7 @@
         <section id="work">
             <h3>Projects</h3> 
             <ul>
+                <li class="project_bd_avengers">Labyrinth</li>
                 <li class="project_itech1">RESTful API</li>
                 <li class="project_itech2">Android development</li>
                 <li class="project_itech3">Semantic Web</li>
@@ -109,6 +115,26 @@
             <div class="work_container">
                 <section class="project project_stub">
                     <h4>Select one of my projects on the left to learn more!</h4>
+                </section>
+                
+                <section class="project project_bd_avengers">
+                    <picture>
+                        <source srcset="images/bd_avengers.png" media="(min-width: 1367px)">
+                        <source srcset="images/bd_avengers_small.png">
+                        <img src="images/bd_avengers_small.png">
+                    </picture>
+                    <section class="description">
+                        <h4>
+                    Game Dev: De Betoverde Doolhof
+                </h4>
+
+                        <p>
+                            A JavaFX implementation of the board game Labyrinth. Included is a theme manager, so you can customize the look of the game. Currently supported themes are: Minecraft, Avengers and Vanilla.
+                        </p>
+                        <a><i class="fa fa-github fa-2x"></i></a>
+                        <h5><em>Written in</em> Java, JavaFX</h5>
+                        <h6><a href="files/Labyrinth.zip">Play the game!</a></h6>
+                    </section>
                 </section>
                 
                 <section class="project project_itech1">
@@ -171,9 +197,9 @@
 
                 <section class="project project_proccopter">
                     <picture>
-                        <source srcset="../images/project_soi_2_1.png" media="(min-width: 1367px)">
-                        <source srcset="../images/project_soi_2_1_small.png">
-                        <img src="../images/project_soi_2_1_small.png">
+                        <source srcset="images/project_soi_2_1.png" media="(min-width: 1367px)">
+                        <source srcset="images/project_soi_2_1_small.png">
+                        <img src="images/project_soi_2_1_small.png">
                     </picture>
                     <section class="description">
                         <h4>
@@ -191,9 +217,9 @@
 
                 <section class="project project_bustabubble">
                     <picture>
-                        <source srcset="../images/project_soi.png" media="(min-width: 1367px)">
-                        <source srcset="../images/project_soi_small.png">
-                        <img src="../images/project-soi_small.png">
+                        <source srcset="images/project_soi.png" media="(min-width: 1367px)">
+                        <source srcset="images/project_soi_small.png">
+                        <img src="images/project-soi_small.png">
                     </picture>
                     <section class="description">
                         <h4>
@@ -212,9 +238,9 @@
                 <section class="project project_fuzzy">
 
                     <picture>
-                        <source srcset="../images/project_vgdb.png" media="(min-width: 1367px)">
-                        <source srcset="../images/project_vgdb_small.png">
-                        <img src="../images/project_vgdb.png">
+                        <source srcset="images/project_vgdb.png" media="(min-width: 1367px)">
+                        <source srcset="images/project_vgdb_small.png">
+                        <img src="images/project_vgdb.png">
                     </picture>
                     <section class="description">
                         <h4>
@@ -242,7 +268,7 @@
                 <div>
                     <a href="https://www.facebook.com/jasper.dhaene"><i class="fa fa-facebook fa-1x"></i><span>/</span> Jasper D'haene</a>
                     <a href="https://github.com/JasperDhaene"><i class="fa fa-github-alt fa-1x"></i><span>/</span> JasperDhaene</a>
-                    <a href="mailto:jasper.dhaene@gmail.com"><i class="fa fa-envelope fa-1x"></i><span>/</span> jasper.dhaene[at]gmail.com</a>
+                    <a><i class="fa fa-envelope fa-1x"></i><span>/</span> jasper.dhaene[at]gmail.com</a>
                 </div>
             </footer>
             <script>
