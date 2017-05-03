@@ -1,5 +1,7 @@
 *.txt
 *~
+cv/*~
+cv/cv/*~
 css/.sass-cache
 eportfolio/css/.sass-cache
 cv/*.log
