@@ -41,12 +41,58 @@ html {
                 text-decoration: none;
             }
             
-            .languages {
-                position: absolute;
-                //width: 5vw;
-                top: 5vh;
-                right: 10px;
+            .language_container {
+                background-color: transparent;
+                width: 6%;
+                position:absolute;
+                right: 15px;
+               
+                
+                button, button:visited, button:active {
+                    background-color: transparent;
+                    color: $black;
+                    padding: 10px;
+                    font-size: 14px;
+                    border: none;
+                    
+                }
+                
+                ul {
+                    list-style: none;
+                    font-size: 14px;
+                    display: none;
+                    cursor: initial;
+                    li {
+                        margin-bottom: 5px;
+                        a {
+                            padding: 15px;
+                            color: $black;
+                        }
+                    }
+                    li a:hover {
+                        color: mediumaquamarine;
+                    }
+                    li.current_language {
+                        font-weight: bold;
+                    }
+                }
             }
+            
+            .language_container:hover ul {
+                display: block;
+            }
+            
+            .arrow-down {
+                width: 0; 
+                height: 0; 
+                border-left: 5px solid transparent;
+                border-right: 5px solid transparent;
+
+                border-top: 5px solid $black;
+                margin-left: 5px;
+                display: inline-block;
+            }
+            
             
             nav {
                 position: fixed;

@@ -406,10 +406,41 @@ html body main {
   html body main a, html body main a:visited, html body main a:active {
     color: #F8F8F8;
     text-decoration: none; }
-  html body main .languages {
+  html body main .language_container {
+    background-color: transparent;
+    width: 6%;
     position: absolute;
-    top: 5vh;
-    right: 10px; }
+    right: 15px; }
+    html body main .language_container button, html body main .language_container button:visited, html body main .language_container button:active {
+      background-color: transparent;
+      color: #111111;
+      padding: 10px;
+      font-size: 14px;
+      border: none; }
+    html body main .language_container ul {
+      list-style: none;
+      font-size: 14px;
+      display: none;
+      cursor: initial; }
+      html body main .language_container ul li {
+        margin-bottom: 5px; }
+        html body main .language_container ul li a {
+          padding: 15px;
+          color: #111111; }
+      html body main .language_container ul li a:hover {
+        color: mediumaquamarine; }
+      html body main .language_container ul li.current_language {
+        font-weight: bold; }
+  html body main .language_container:hover ul {
+    display: block; }
+  html body main .arrow-down {
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #111111;
+    margin-left: 5px;
+    display: inline-block; }
   html body main nav {
     position: fixed;
     top: 50vh;
