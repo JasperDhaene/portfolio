@@ -475,6 +475,10 @@ html body main {
       font-size: 2em;
       font-family: 'BlackoutInverse';
       color: mediumaquamarine; }
+  html body main header#home.fr h2 {
+    font-size: 10em; }
+  html body main .fr h3 {
+    font-size: 10em; }
   html body main > section {
     height: 100vh;
     padding: 0 20px; }
