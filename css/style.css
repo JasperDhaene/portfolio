@@ -142,13 +142,13 @@ html body {
     margin: 0 15px 0 5px;
     font-weight: bold; }
   html body .numbered li::before {
-    content: '</>';
+    content: '<>';
     position: relative;
     display: block;
-    font-size: 1em;
+    font-size: 1.5em;
     color: rgba(231, 231, 231, 0.7);
     left: -42px;
-    top: 25px;
+    top: 40px;
     font-weight: bold; }
   html body .numbered li {
     margin-left: 50px; }
@@ -177,14 +177,22 @@ html body {
         background-color: #f4f4f4;
         border-radius: 5px;
         color: #132D4E; }
-        html body #about #skill_container div li::before {
+        html body #about #skill_container div h6::before {
           content: '//';
           position: relative;
-          right: 15px;
+          right: 10px;
           display: inline-block;
-          font-size: 0.8em;
+          font-size: 1.2em;
           color: #cecece;
           font-weight: bold; }
+        html body #about #skill_container div h5 {
+          transform: rotate(90deg);
+          color: rgba(0, 0, 0, 0.5);
+          font-size: 2.5em;
+          position: relative;
+          top: 120px;
+          right: -200px;
+          height: 0px; }
   html body nav {
     position: fixed;
     right: 30px;
