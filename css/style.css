@@ -130,10 +130,31 @@ html body {
       font-size: 2em;
       margin: 20px; }
     html body .page li {
-      font-size: 1.5em;
-      margin: 20px; }
+      font-size: 1.3em;
+      margin: 20px 25px; }
+  html body .indented li {
+    margin: 20px 3vw; }
+  html body .commented li::before {
+    content: '<>';
+    display: inline-block;
+    font-size: 1em;
+    color: rgba(231, 231, 231, 0.7);
+    margin: 0 15px 0 5px;
+    font-weight: bold; }
+  html body .numbered li::before {
+    content: '</>';
+    position: relative;
+    display: block;
+    font-size: 1em;
+    color: rgba(231, 231, 231, 0.7);
+    left: -42px;
+    top: 25px;
+    font-weight: bold; }
+  html body .numbered li {
+    margin-left: 50px; }
   html body #about {
     background-color: #64B8AF;
+    background-image: url("../images/graphy.png");
     padding-bottom: 5vh; }
     html body #about a, html body #about a:hover, html body #about a:active, html body #about a:visited, html body #about a:focus {
       text-decoration: underline;
@@ -141,8 +162,29 @@ html body {
     html body #about h4 {
       margin-top: 5vh;
       margin-bottom: 5vh; }
-  html body #skills {
-    background-color: #E7E7E7; }
+    html body #about ul li {
+      list-style: none; }
+    html body #about #skill_container {
+      display: flex;
+      justify-content: space-around;
+      align-items: center; }
+      html body #about #skill_container div {
+        display: inline-block;
+        height: 42vh;
+        width: 15vw;
+        padding: 20px;
+        box-sizing: content-box;
+        background-color: #f4f4f4;
+        border-radius: 5px;
+        color: #132D4E; }
+        html body #about #skill_container div li::before {
+          content: '//';
+          position: relative;
+          right: 15px;
+          display: inline-block;
+          font-size: 0.8em;
+          color: #cecece;
+          font-weight: bold; }
   html body nav {
     position: fixed;
     right: 30px;

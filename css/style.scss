@@ -3,7 +3,11 @@ $red: #FB2712;
 $dark-blue: #132D4E;
 $green: #009E9D;
 $light-green: #64B8AF;
-$gray: #E7E7E7;
+$light-gray: #f4f4f4;
+$mid-gray: #cecece;
+$dark-gray: #616B76;
+$trans-gray: rgba(231,231,231,0.7);
+$trans-mid-gray: rgba(206,206,206,0.7);
 $beige: #FFF7EA;
 
 @font-face {
@@ -89,13 +93,45 @@ html {
             }
             
             li {
-                font-size: 1.5em;
-                margin: 20px;
+                font-size: 1.3em;
+                margin: 20px 25px;
+            }
+        }
+        
+        .indented li {
+            margin: 20px 3vw;
+        }
+        
+        .commented li::before {
+            content: '<>';
+            display: inline-block;
+            font-size: 1em;
+            color: $trans-gray;
+            margin: 0 15px 0 5px;
+            font-weight: bold;
+        }
+        
+        .numbered {
+            li::before {
+                content: '</>';
+                position: relative;
+                display: block;
+                font-size: 1em;
+                color: $trans-gray;
+                left: -42px;
+                top: 25px;
+                
+                font-weight: bold;
+            } 
+            li {
+                margin-left: 50px;
             }
         }
         
         #about {
             background-color: $light-green;
+            background-image: url('../images/graphy.png');
+            //background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('../images/axiom-pattern.png');
             padding-bottom: 5vh;
             
             
@@ -108,13 +144,43 @@ html {
                 margin-top: 5vh;
                 margin-bottom: 5vh;
             }
+            
+            ul li {
+                list-style: none;
+            }
+            
+            #skill_container {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                
+                div {
+                    display: inline-block;
+                    height: 42vh;
+                    width: 15vw;
+                    padding: 20px;
+                    box-sizing: content-box;
+                    background-color: $light-gray;
+                    border-radius: 5px;
+                    color: $dark-blue;
+                    
+                    li::before {
+                        content: '//';
+                        position: relative;
+                        right: 15px;
+                        display: inline-block;
+                        font-size: 0.8em;
+                        color: $mid-gray;
+                        //margin: 0 15px 0 5px;
+                        font-weight: bold;
+                    }
+                }
+                
+                
+            }
+            
         }
-        
-        #skills {
-            background-color: $gray;
-            //ALT
-            //$beige
-        }
+
         nav {
             position: fixed;
             right: 30px;
