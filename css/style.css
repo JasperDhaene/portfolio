@@ -1,265 +1,206 @@
 @font-face {
-  font-family: 'BlackoutInverse';
-  src: url("../fonts/Blackout-2am.ttf");
-  font-weight: normal;
-  font-style: normal; }
+  font-family: 'ADAMCGPRO';
+  src: url("../fonts/ADAM.CG PRO.otf") format("opentype"); }
 @font-face {
-  font-family: 'WC';
-  src: url("../fonts/WCManoNegraBta.otf");
-  font-weight: normal;
-  font-style: normal; }
-html body main {
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  overflow: hidden; }
-  html body main a, html body main a:visited, html body main a:active {
-    color: #F8F8F8;
-    text-decoration: none; }
-  html body main nav {
+  font-family: 'NexaDemoLight';
+  src: url("../fonts/NexaDemo-Light.otf") format("opentype"); }
+@font-face {
+  font-family: 'NexaDemoBold';
+  src: url("../fonts/NexaDemo-Bold.otf") format("opentype"); }
+html body {
+  font-family: 'NexaDemoLight', sans-serif;
+  background-color: #FFF7EA;
+  box-sizing: border-box;
+        /*div.work_container {
+            float: left;
+            height: 80vh;
+            width: 69vw;
+            overflow: hidden;
+            //padding: 10vh 0;
+            //background-color: $light-gray;
+            border-left: 5px solid $dark;
+
+            section.project {
+                height: 100vh;
+                width: 70vw;
+                position: absolute;
+                visibility: hidden;
+                background-color: inherit;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+
+
+                picture {
+                    padding: 20px;
+                    flex: 2;
+                    img {
+                        text-align: center;
+                        border: 5px solid $dark;
+                    }
+                    text-align: center;
+                }
+
+                section.description{
+                    flex: 4;
+                    padding: 0 15vw;
+
+                    h4 {
+                        font-size: 5em;
+                        text-align: center;
+                    }
+
+                    p {
+                        margin: 50px 0;
+                    }
+
+                    a, a:visited,a:active {
+                        color: $dark;
+                        text-decoration: none;
+                    }
+
+                    a:hover {
+                        color: aquamarine;
+                    }
+
+                    i {
+                        display: inline;
+                    }
+
+                    h5 {
+                        display: inline;
+                    }
+                }
+            }
+
+            section.project_stub {
+                justify-content: flex-start;
+                h4 {
+                    visibility: visible;
+                }
+            }
+        }
+
+        &#work ul {
+            float: left;
+            //width: 30vw;
+            display: inline;
+            font-size: 1em;
+            padding: 10px;
+            box-sizing: border-box;
+            li {
+                font-size: 3em;
+                padding: 20px;
+            }
+            li.work_active {
+                background-color: aquamarine;
+            }
+
+        }
+        */ }
+  html body h1 {
+    padding-top: 10vh;
+    color: #132D4E; }
+  html body h2 {
+    color: #009E9D; }
+  html body h3 {
+    font-size: 5em;
+    font-weight: bolder; }
+  html body h4 {
+    font-size: 2em; }
+  html body h5 {
+    margin: 5px 0px; }
+  html body a, html body a:hover, html body a:active, html body a:visited, html body a:focus {
+    text-decoration: none;
+    color: black; }
+  html body #home {
+    font-family: 'NexaDemoBold', 'ADAMCGPRO';
+    font-size: 8em;
+    padding-left: 40px;
+    height: 90vh; }
+    html body #home h2 {
+      margin: 10vh; }
+  html body .page {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-right: 15vw;
+    padding-left: 50px; }
+    html body .page p {
+      font-size: 2em;
+      margin: 20px; }
+    html body .page li {
+      font-size: 1.5em;
+      margin: 20px; }
+  html body #about {
+    background-color: #64B8AF;
+    padding-bottom: 5vh; }
+    html body #about a, html body #about a:hover, html body #about a:active, html body #about a:visited, html body #about a:focus {
+      text-decoration: underline;
+      color: #132D4E; }
+    html body #about h4 {
+      margin-top: 5vh;
+      margin-bottom: 5vh; }
+  html body #skills {
+    background-color: #E7E7E7; }
+  html body nav {
     position: fixed;
-    top: 50vh;
-    right: 20px;
-    z-index: 42; }
-    html body main nav a, html body main nav a:visited, html body main nav a:active {
-      color: #111111; }
-    html body main nav a:hover {
-      text-decoration: line-through; }
-    html body main nav ul {
-      list-style: none;
-      color: #111111; }
-      html body main nav ul li {
-        margin: 5px 0;
-        text-align: right; }
-        html body main nav ul li a {
-          color: #111111; }
-        html body main nav ul li i {
-          margin: 0 0 0 10px; }
-      html body main nav ul:hover a {
-        visibility: visible; }
-  html body main header {
-    height: 100vh;
-    background-repeat: no-repeat;
-    background-size: cover; }
-    html body main header h1 {
-      padding: 10vh 0;
-      display: block;
-      text-align: center;
-      font-size: 15em;
-      font-family: 'WC';
-      color: #111111; }
-      @media screen and (min-width: 769px) and (max-width: 1366px) {
-        html body main header h1 {
-          padding: 5vh 0;
-          font-size: 10em; } }
-    html body main header h2 {
-      margin: 15vh 0;
-      display: block;
-      text-align: center;
-      font-size: 12em;
-      font-family: 'BlackoutInverse';
-      color: mediumaquamarine; }
-      @media screen and (min-width: 769px) and (max-width: 1366px) {
-        html body main header h2 {
-          font-size: 8em;
-          margin: 15vh 0 0 0; } }
-  html body main > section {
-    height: 100vh;
-    margin: 15vh 0;
-    padding: 0 20px; }
-    html body main > section h3 {
-      font-size: 14em;
-      word-spacing: 40vw;
-      width: 40vw;
-      float: left; }
-      html body main > section h3 span.accent {
-        color: aquamarine; }
-      @media screen and (min-width: 769px) and (max-width: 1366px) {
-        html body main > section h3 {
-          font-size: 7em; } }
-    html body main > section ul {
-      padding: 10vh 0;
-      float: left;
-      list-style: none;
-      font-size: 3em; }
-      @media screen and (min-width: 769px) and (max-width: 1366px) {
-        html body main > section ul {
-          padding: 0; } }
-      html body main > section ul li {
-        margin: 40px 0; }
-        html body main > section ul li span[lang="ja"] {
-          font-size: .3em;
-          -ms-writing-mode: tb-rl;
-          -webkit-writing-mode: vertical-rl;
-          -moz-writing-mode: vertical-rl;
-          -ms-writing-mode: vertical-rl;
-          writing-mode: vertical-rl; }
-    html body main > section#skills {
-      width: 100vw;
-      background-color: #707070;
-      height: 70vh;
-      box-sizing: border-box; }
-      html body main > section#skills h3 {
-        float: none;
-        width: auto;
-        text-align: center; }
-      html body main > section#skills h4 {
-        text-align: center;
-        margin: 100px 0 0 0; }
-      html body main > section#skills > div {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center; }
-        html body main > section#skills > div div {
-          width: 25vw;
-          text-align: center;
-          color: #F8F8F8; }
-          html body main > section#skills > div div img {
-            width: 100px;
-            height: 100px; }
-          html body main > section#skills > div div h4 {
-            margin: 10px 0;
-            font-size: 2em;
-            color: #0affb9; }
-    html body main > section div.work_container {
-      float: left;
-      height: 90vh;
-      width: 60vw;
-      overflow: hidden;
-      border-left: 5px solid #111111; }
-      @media screen and (min-width: 769px) and (max-width: 1366px) {
-        html body main > section div.work_container {
-          height: 65vh; } }
-      html body main > section div.work_container section.project {
-        height: 100vh;
-        width: 70vw;
-        position: absolute;
-        visibility: hidden;
-        background-color: inherit;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center; }
-        html body main > section div.work_container section.project picture {
-          padding: 20px;
-          flex: 2;
-          text-align: center; }
-          html body main > section div.work_container section.project picture img {
-            text-align: center;
-            border: 5px solid #111111; }
-          @media screen and (min-width: 769px) and (max-width: 1366px) {
-            html body main > section div.work_container section.project picture {
-              padding: 0; } }
-        html body main > section div.work_container section.project section.description {
-          flex: 4;
-          padding: 0 15vw; }
-          html body main > section div.work_container section.project section.description h4 {
-            font-size: 5em;
-            text-align: center; }
-            @media screen and (min-width: 769px) and (max-width: 1366px) {
-              html body main > section div.work_container section.project section.description h4 {
-                font-size: 2em; } }
-          html body main > section div.work_container section.project section.description p {
-            margin: 50px 0; }
-            @media screen and (min-width: 769px) and (max-width: 1366px) {
-              html body main > section div.work_container section.project section.description p {
-                margin: 30px 0; } }
-          html body main > section div.work_container section.project section.description a, html body main > section div.work_container section.project section.description a:visited, html body main > section div.work_container section.project section.description a:active {
-            color: #111111;
-            text-decoration: none; }
-          html body main > section div.work_container section.project section.description a:hover {
-            color: aquamarine; }
-          html body main > section div.work_container section.project section.description i {
-            display: inline; }
-            @media screen and (min-width: 769px) and (max-width: 1366px) {
-              html body main > section div.work_container section.project section.description i {
-                font-size: 1em; } }
-          html body main > section div.work_container section.project section.description h5 {
-            display: inline; }
-            @media screen and (min-width: 769px) and (max-width: 1366px) {
-              html body main > section div.work_container section.project section.description h5 {
-                font-size: .5em; } }
-      html body main > section div.work_container section.project_stub {
-        justify-content: flex-start; }
-        html body main > section div.work_container section.project_stub h4 {
-          visibility: visible; }
-    html body main > section#work ul {
-      float: left;
-      display: inline;
-      font-size: 1em;
-      padding: 10px;
-      box-sizing: border-box; }
-      @media screen and (min-width: 769px) and (max-width: 1366px) {
-        html body main > section#work ul {
-          padding: 5px; } }
-      html body main > section#work ul li {
-        font-size: 3em;
-        padding: 20px; }
-        @media screen and (min-width: 769px) and (max-width: 1366px) {
-          html body main > section#work ul li {
-            font-size: 1.5em;
-            margin: 0; } }
-      html body main > section#work ul li.work_active {
-        background-color: aquamarine; }
-    html body main > section#about {
-      height: 100vh;
-      color: black; }
-      html body main > section#about .alt {
-        display: none; }
-    html body main > section#interested {
-      height: 100vh; }
-    html body main > section#skills {
-      border-top: 1px solid #878787; }
-    html body main > section#work {
-      margin: 25vh 0; }
-      html body main > section#work h3 {
-        font-family: 'WC';
-        float: none; }
-    html body main > section#empty {
-      height: 200vh; }
-  html body main footer {
-    padding: 0 0 10vh 0;
-    background-color: #111111;
-    color: white;
+    right: 30px;
+    top: 20vh;
+    font-size: 3em; }
+    html body nav ul {
+      list-style: none; }
+    html body nav li::after {
+      content: '';
+      width: 100%;
+      height: 10px;
+      background-color: #FB2712;
+      display: inline-block;
+      position: relative;
+      bottom: 35px;
+      left: 10px; }
+  html body #projects {
     /*
-    a, a:visited,a:active{
-        color: $white;
-        text-decoration: none;
+    ul {
+        float: left;
+        background-color: yellow;
+        width: 20vw;
+        display: inline-block;
+        //position: absolute;
+        
+        li {
+            list-style: none;
+        }
     }
     */ }
-    html body main footer h4 {
-      display: block;
-      text-align: center;
-      padding: 10px 0 10vh 0;
-      font-size: 4em;
-      color: white; }
-      @media screen and (min-width: 769px) and (max-width: 1366px) {
-        html body main footer h4 {
-          font-size: 2em; } }
-    html body main footer div {
-      display: flex;
-      justify-content: space-around;
-      align-items: center; }
-      html body main footer div a {
-        font-size: 3em; }
-        html body main footer div a span {
-          color: #4c4c4c; }
-        html body main footer div a i {
-          font-size: .3em; }
-        html body main footer div a:nth-child(1):hover i {
-          color: #3B5998; }
-        html body main footer div a:nth-child(2):hover i {
-          color: #3f3c3c; }
-        html body main footer div a:nth-child(3):hover i {
-          color: #CC181E; }
-        @media screen and (min-width: 769px) and (max-width: 1366px) {
-          html body main footer div a {
-            font-size: 1.5em; } }
-
-#work {
-    height: 110vh;
-}
-html body main > section div.work_container {
-    height: 100vh;
-}
+    html body #projects a i {
+      vertical-align: middle;
+      color: black;
+      margin-right: 5px; }
+    html body #projects a, html body #projects a:hover, html body #projects a:active, html body #projects a:visited, html body #projects a:focus {
+      text-decoration: underline;
+      color: #64B8AF; }
+    html body #projects h4 {
+      font-size: 3em; }
+    html body #projects #project_container {
+      width: 80vw;
+      height: auto; }
+      html body #projects #project_container .project {
+        padding: 50px;
+        height: 50vh; }
+        html body #projects #project_container .project picture {
+          float: right; }
+        html body #projects #project_container .project .description {
+          width: 40vw; }
+          html body #projects #project_container .project .description p {
+            margin-bottom: 150px; }
+  html body #contact {
+    height: 20vh;
+    background-color: #64B8AF;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; }
+    html body #contact p {
+      font-size: 2em; }
 
 /*# sourceMappingURL=style.css.map */

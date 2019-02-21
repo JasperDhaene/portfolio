@@ -1,0 +1,299 @@
+//$red: #FF2613;
+$red: #FB2712;
+$dark-blue: #132D4E;
+$green: #009E9D;
+$light-green: #64B8AF;
+$gray: #E7E7E7;
+$beige: #FFF7EA;
+
+@font-face {
+    font-family: 'ADAMCGPRO';
+    src: url('../fonts/ADAM.CG PRO.otf') format("opentype");
+}
+
+@font-face {
+    font-family: 'NexaDemoLight';
+    src: url('../fonts/NexaDemo-Light.otf') format("opentype");
+}
+
+@font-face {
+    font-family: 'NexaDemoBold';
+    src: url('../fonts/NexaDemo-Bold.otf') format("opentype");
+}
+
+html {
+    body {
+                
+        font-family: 'NexaDemoLight', sans-serif;
+        
+        background-color: $beige;
+        
+        box-sizing: border-box;
+        
+        h1 {
+            padding-top:10vh;
+            color: $dark-blue;
+        }
+        
+        h2 {
+            color: $green;
+        }
+        
+        h3 {
+            font-size: 5em;
+            font-weight: bolder;
+        }
+            
+        h4 {
+            font-size: 2em;
+        }
+        
+        h5 {
+            margin: 5px 0px;
+        }
+        
+        a, a:hover, a:active, a:visited, a:focus {
+            text-decoration:none;
+            color: black;
+        }
+
+        #home {
+            font-family: 'NexaDemoBold', 'ADAMCGPRO';
+
+            font-size: 8em;
+            padding-left: 40px;
+            
+            height: 90vh;
+            
+            h2 {
+                margin: 10vh;
+            }
+           
+        }
+        
+        
+        
+        .page {
+            //max-height: 100vh;
+            
+            padding-top: 10vh;
+            padding-bottom: 10vh;
+            padding-right: 15vw;
+            padding-left: 50px;
+            
+            //overflow: hidden;
+            
+            p {
+                font-size: 2em;
+                margin: 20px;
+            }
+            
+            li {
+                font-size: 1.5em;
+                margin: 20px;
+            }
+        }
+        
+        #about {
+            background-color: $light-green;
+            padding-bottom: 5vh;
+            
+            
+            a, a:hover, a:active, a:visited, a:focus {
+                text-decoration: underline;
+                color: $dark-blue;
+            }
+            
+            h4 {
+                margin-top: 5vh;
+                margin-bottom: 5vh;
+            }
+        }
+        
+        #skills {
+            background-color: $gray;
+            //ALT
+            //$beige
+        }
+        nav {
+            position: fixed;
+            right: 30px;
+            top: 20vh;
+            
+            font-size: 3em;
+            
+            ul {
+                list-style: none;
+            }
+            
+            li::after {
+                content: '';
+                width: 100%;
+                height: 10px;
+                background-color: $red;
+                display: inline-block;
+                position: relative;
+                bottom: 35px;
+                left: 10px;
+            
+            }
+
+        }
+        
+        #projects {
+            /*
+            ul {
+                float: left;
+                background-color: yellow;
+                width: 20vw;
+                display: inline-block;
+                //position: absolute;
+                
+                li {
+                    list-style: none;
+                }
+            }
+            */
+            a i {
+                vertical-align: middle;
+                color: black;
+                margin-right: 5px;
+            }
+            
+            a, a:hover, a:active, a:visited, a:focus {
+                text-decoration: underline;
+                color: $light-green;
+            }
+            
+            h4 {
+                font-size: 3em; 
+            }
+            
+            #project_container {
+                width: 80vw;
+                height: auto;
+                //ALT
+                //background-color: $gray;
+                
+                .project {
+                    padding: 50px;
+                    height: 50vh;
+                    
+                    picture {
+                        float: right;
+                    }
+                    
+                    .description {
+                        width: 40vw;
+                        
+                        p {
+                            margin-bottom: 150px;
+                        }
+                    }
+                }
+            }
+        }
+        
+        #contact {
+            height: 20vh;
+            background-color: $light-green;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            
+            p {
+                font-size: 2em;
+            }
+        }
+        
+        /*div.work_container {
+            float: left;
+            height: 80vh;
+            width: 69vw;
+            overflow: hidden;
+            //padding: 10vh 0;
+            //background-color: $light-gray;
+            border-left: 5px solid $dark;
+
+            section.project {
+                height: 100vh;
+                width: 70vw;
+                position: absolute;
+                visibility: hidden;
+                background-color: inherit;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+
+
+                picture {
+                    padding: 20px;
+                    flex: 2;
+                    img {
+                        text-align: center;
+                        border: 5px solid $dark;
+                    }
+                    text-align: center;
+                }
+
+                section.description{
+                    flex: 4;
+                    padding: 0 15vw;
+
+                    h4 {
+                        font-size: 5em;
+                        text-align: center;
+                    }
+
+                    p {
+                        margin: 50px 0;
+                    }
+
+                    a, a:visited,a:active {
+                        color: $dark;
+                        text-decoration: none;
+                    }
+
+                    a:hover {
+                        color: aquamarine;
+                    }
+
+                    i {
+                        display: inline;
+                    }
+
+                    h5 {
+                        display: inline;
+                    }
+                }
+            }
+
+            section.project_stub {
+                justify-content: flex-start;
+                h4 {
+                    visibility: visible;
+                }
+            }
+        }
+
+        &#work ul {
+            float: left;
+            //width: 30vw;
+            display: inline;
+            font-size: 1em;
+            padding: 10px;
+            box-sizing: border-box;
+            li {
+                font-size: 3em;
+                padding: 20px;
+            }
+            li.work_active {
+                background-color: aquamarine;
+            }
+
+        }
+        */
+    
+    }
+}
