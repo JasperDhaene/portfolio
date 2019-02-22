@@ -128,10 +128,12 @@ html {
             }
         }
         
-        #about {
+        .patterned_bg {
             background-color: $light-green;
             background-image: url('../images/graphy.png');
-            //background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('../images/axiom-pattern.png');
+        }
+        
+        #about {
             padding-bottom: 5vh;
             
             

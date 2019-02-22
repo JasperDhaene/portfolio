@@ -152,9 +152,10 @@ html body {
     font-weight: bold; }
   html body .numbered li {
     margin-left: 50px; }
-  html body #about {
+  html body .patterned_bg {
     background-color: #64B8AF;
-    background-image: url("../images/graphy.png");
+    background-image: url("../images/graphy.png"); }
+  html body #about {
     padding-bottom: 5vh; }
     html body #about a, html body #about a:hover, html body #about a:active, html body #about a:visited, html body #about a:focus {
       text-decoration: underline;
