@@ -190,7 +190,6 @@ html {
         #about {
             padding-bottom: 5vh;
             
-            
             a, a:hover, a:active, a:visited, a:focus {
                 text-decoration: underline;
                 color: $dark-blue;
@@ -199,6 +198,14 @@ html {
             h4 {
                 margin-top: 5vh;
                 margin-bottom: 5vh;
+            }
+            
+            h5 {
+                display: none;
+                
+                @include desktop {
+                    display: block;
+                }
             }
             
             ul li {
@@ -229,8 +236,6 @@ html {
                         color: $mid-gray;
                         //margin: 0 15px 0 5px;
                         font-weight: bold;
-                        
-
                     }
                     
                     h5 {

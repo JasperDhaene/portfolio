@@ -105,6 +105,11 @@ html body {
     html body #about h4 {
       margin-top: 5vh;
       margin-bottom: 5vh; }
+    html body #about h5 {
+      display: none; }
+      @media (min-width: 1400px) {
+        html body #about h5 {
+          display: block; } }
     html body #about ul li {
       list-style: none; }
     html body #about #skill_container {
