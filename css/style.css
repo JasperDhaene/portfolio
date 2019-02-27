@@ -116,7 +116,17 @@ html body {
       display: flex;
       justify-content: space-around;
       align-items: center; }
-      html body #about #skill_container div {
+      html body #about #skill_container div.outer-box {
+        width: 19vw;
+        background-repeat: no-repeat;
+        background-size: contain; }
+      html body #about #skill_container div#web {
+        background-image: url("../images/web.png"); }
+      html body #about #skill_container div#desktop {
+        background-image: url("../images/desktop.png"); }
+      html body #about #skill_container div#personal {
+        background-image: url("../images/personal.png"); }
+      html body #about #skill_container div.inner-box {
         display: inline-block;
         height: 42vh;
         width: 15vw;
@@ -125,7 +135,7 @@ html body {
         background-color: #f4f4f4;
         border-radius: 5px;
         color: #132D4E; }
-        html body #about #skill_container div h6::before {
+        html body #about #skill_container div.inner-box h6::before {
           content: '//';
           position: relative;
           right: 10px;
@@ -133,18 +143,6 @@ html body {
           font-size: 1.2em;
           color: #cecece;
           font-weight: bold; }
-        html body #about #skill_container div h5 {
-          transform: rotate(90deg);
-          color: rgba(0, 0, 0, 0.5);
-          font-size: 2.5em;
-          position: relative;
-          top: 80px;
-          right: -150px;
-          height: 0px; }
-          @media (min-width: 1400px) {
-            html body #about #skill_container div h5 {
-              top: 120px;
-              right: -200px; } }
   html body #projects a i {
     vertical-align: middle;
     color: black;

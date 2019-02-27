@@ -216,8 +216,27 @@ html {
                 display: flex;
                 justify-content: space-around;
                 align-items: center;
+        
+                div.outer-box {
+                    width: 19vw;
+                    
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                }
                 
-                div {
+                div#web {
+                    background-image: url('../images/web.png');
+                }
+                
+                div#desktop {
+                    background-image: url('../images/desktop.png');
+                }
+                
+                div#personal {
+                    background-image: url('../images/personal.png');
+                }
+                
+                div.inner-box {
                     display: inline-block;
                     height: 42vh;
                     width: 15vw;
@@ -238,24 +257,10 @@ html {
                         font-weight: bold;
                     }
                     
-                    h5 {
-                        transform:rotate(90deg);
-                        color: rgba(0,0,0,0.5);
-                        font-size: 2.5em;
-                        position: relative;
-                        top: 80px;
-                        right: -150px;
-                        
-                        @include desktop {
-                            top: 120px;
-                            right: -200px;
-                        }
-                        height: 0px;
-                    }
                 }
             }
-            
         }
+            
 
         #projects {
             
