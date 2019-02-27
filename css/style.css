@@ -128,7 +128,6 @@ html body {
         background-image: url("../images/personal.png"); }
       html body #about #skill_container div.inner-box {
         display: inline-block;
-        height: 42vh;
         width: 15vw;
         padding: 25px 20px;
         box-sizing: content-box;
