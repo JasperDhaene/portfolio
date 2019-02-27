@@ -7,3 +7,4 @@ eportfolio/css/.sass-cache
 cv/*.log
 cv/*.out
 cv/*.aux
+*.xcf
