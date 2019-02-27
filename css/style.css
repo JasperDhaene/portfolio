@@ -155,8 +155,7 @@ html body {
     width: 80vw;
     height: auto; }
     html body #projects #project_container .project {
-      padding: 50px;
-      height: 50vh; }
+      padding: 50px; }
       html body #projects #project_container .project picture {
         float: right; }
       html body #projects #project_container .project .description {
