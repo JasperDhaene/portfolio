@@ -31,6 +31,10 @@ $beige: #FFF7EA;
     @media (min-width: 1400px) { @content; }
 }
 
+@mixin big-desktop {
+    @media (min-width: 1800px) { @content; }
+}
+
 html {
     body {
                 
@@ -139,15 +143,29 @@ html {
             
             height: 70vh;
             
-            h2 {
+            h1 {
                 font-size: 0.8em;
-                width: 50%;
+                @include big-desktop {
+                    font-size: 1em;
+                }
+            }
+            
+            h2 {
+                font-size: 0.5em;
                 margin: 10vh;
+                
+                @include big-desktop {
+                    font-size: 0.8em;
+                    width: 50%;
+                }
             }
             
             #title_separator {
                 color: $mid-gray;
-                font-size: 0.6em;
+                font-size: 0.5em;
+                @include big-desktop {
+                    font-size: 0.6em;
+                }
             }
            
         }

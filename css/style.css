@@ -71,13 +71,24 @@ html body {
     @media (min-width: 1400px) {
       html body #home {
         font-size: 8em; } }
+    html body #home h1 {
+      font-size: 0.8em; }
+      @media (min-width: 1800px) {
+        html body #home h1 {
+          font-size: 1em; } }
     html body #home h2 {
-      font-size: 0.8em;
-      width: 50%;
+      font-size: 0.5em;
       margin: 10vh; }
+      @media (min-width: 1800px) {
+        html body #home h2 {
+          font-size: 0.8em;
+          width: 50%; } }
     html body #home #title_separator {
       color: #bababa;
-      font-size: 0.6em; }
+      font-size: 0.5em; }
+      @media (min-width: 1800px) {
+        html body #home #title_separator {
+          font-size: 0.6em; } }
   html body .styled_list li::before {
     content: '<>';
     color: rgba(231, 231, 231, 0.7);
