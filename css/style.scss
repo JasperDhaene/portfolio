@@ -10,11 +10,6 @@ $trans-mid-gray: rgba(206,206,206,0.7);
 $beige: #FFF7EA;
 
 @font-face {
-    font-family: 'ADAMCGPRO';
-    src: url('../fonts/ADAM.CG PRO.otf') format("opentype");
-}
-
-@font-face {
     font-family: 'NexaDemoLight';
     src: url('../fonts/NexaDemo-Light.otf') format("opentype");
 }
@@ -133,7 +128,7 @@ html {
         }
         
         #home {
-            font-family: 'NexaDemoBold', 'ADAMCGPRO';
+            font-family: 'NexaDemoBold';
 
             font-size: 6em;
             

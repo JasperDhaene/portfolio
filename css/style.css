@@ -1,7 +1,4 @@
 @font-face {
-  font-family: 'ADAMCGPRO';
-  src: url("../fonts/ADAM.CG PRO.otf") format("opentype"); }
-@font-face {
   font-family: 'NexaDemoLight';
   src: url("../fonts/NexaDemo-Light.otf") format("opentype"); }
 @font-face {
@@ -67,7 +64,7 @@ html body {
         html body .page li {
           font-size: 1.3em; } }
   html body #home {
-    font-family: 'NexaDemoBold', 'ADAMCGPRO';
+    font-family: 'NexaDemoBold';
     font-size: 6em;
     padding-left: 40px;
     height: 70vh; }
