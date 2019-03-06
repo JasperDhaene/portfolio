@@ -3,7 +3,7 @@ $dark-blue: #132D4E;
 $green: #009E9D;
 $light-green: #64B8AF;
 $light-gray: #f4f4f4;
-$mid-gray: #cecece;
+$mid-gray: #bababa;
 $dark-gray: #616B76;
 $trans-gray: rgba(231,231,231,0.7);
 $trans-mid-gray: rgba(206,206,206,0.7);
@@ -145,7 +145,14 @@ html {
             height: 70vh;
             
             h2 {
+                font-size: 0.8em;
+                width: 50%;
                 margin: 10vh;
+            }
+            
+            #title_separator {
+                color: $mid-gray;
+                font-size: 0.6em;
             }
            
         }

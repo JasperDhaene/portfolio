@@ -75,7 +75,12 @@ html body {
       html body #home {
         font-size: 8em; } }
     html body #home h2 {
+      font-size: 0.8em;
+      width: 50%;
       margin: 10vh; }
+    html body #home #title_separator {
+      color: #bababa;
+      font-size: 0.6em; }
   html body .styled_list li::before {
     content: '<>';
     color: rgba(231, 231, 231, 0.7);
@@ -140,7 +145,7 @@ html body {
           right: 10px;
           display: inline-block;
           font-size: 1.2em;
-          color: #cecece;
+          color: #bababa;
           font-weight: bold; }
   html body #projects a i {
     vertical-align: middle;
