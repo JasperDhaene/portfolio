@@ -8,6 +8,12 @@ $dark-gray: #616B76;
 $trans-gray: rgba(231,231,231,0.7);
 $trans-mid-gray: rgba(206,206,206,0.7);
 $beige: #FFF7EA;
+$white: #fff;
+$blue: #2472a4;
+$pink: #b92980;
+
+$size-nav-title: 22px;
+$size-nav: 18px;
 
 @font-face {
     font-family: 'NexaDemoLight';
@@ -40,35 +46,12 @@ html {
                 
         font-family: 'NexaDemoLight', sans-serif;
         
-        background-color: $beige;
+        background-color: $white;
         
         box-sizing: border-box;
-        
-        h1 {
-            padding-top:10vh;
-            color: $dark-blue;
-        }
-        
-        h2 {
-            color: $green;
-        }
-        
-        h3 {
-            font-size: 3em;
-            font-weight: bolder;
-            
-            @include desktop {
-                font-size: 5em;
-            }
-        }
-            
-        h4 {
-            font-size: 2em;
-        }
-        
-        h5 {
-            margin: 5px 0px;
-        }
+
+        margin: 5vh 20px;
+
         
         a, a:hover, a:active, a:visited, a:focus {
             text-decoration: none;
@@ -77,251 +60,77 @@ html {
 
         
         nav {
-            position: fixed;
-            right: 30px;
-            top: 20vh;
-            
-            font-size: 2.5em;
-            
-            @include desktop {
-                font-size: 3em;
-            }
+            padding: 2vh 5vw;
             
             ul {
-                list-style: none;
-            }
-            
-            li::after {
-                content: '';
-                width: 100%;
-                height: 7px;
-                background-color: $red;
-                display: inline-block;
-                position: relative;
-                bottom: 30px;
-                left: 10px;
-                
-                @include desktop {
-                    height: 10px;
-                    bottom: 35px;
-                }
-            
-            }
-
-        }
-
-        .page {
-            padding-top: 10vh;
-            padding-bottom: 10vh;
-            padding-right: 15vw;
-            padding-left: 50px;
-            
-            p {
-                font-size: 1.5em;
-                margin: 20px;
-            }
-            
-            li {
-                font-size: 1.1em;
-                margin: 20px 25px;
-                
-                @include desktop {
-                    font-size: 1.3em;
-                }
-            }
-        }
-        
-        #home {
-            font-family: 'NexaDemoBold';
-
-            font-size: 6em;
-            
-            @include desktop {
-                font-size: 8em;
-            }
-            padding-left: 40px;
-            
-            height: 70vh;
-            
-            h1 {
-                font-size: 0.8em;
-                @include big-desktop {
-                    font-size: 1em;
-                }
-            }
-            
-            h2 {
-                font-size: 0.5em;
-                margin: 10vh;
-                
-                @include big-desktop {
-                    font-size: 0.8em;
-                    width: 50%;
-                }
-            }
-            
-            #title_separator {
-                color: $mid-gray;
-                font-size: 0.5em;
-                @include big-desktop {
-                    font-size: 0.6em;
-                }
-            }
-           
-        }
-        
-        .styled_list li::before {
-            content: '<>';
-            color: $trans-gray;
-            font-weight: bold;
-        }
-        
-        #about_challenge {
-            li::before {
-                display: inline-block;
-                font-size: 1em;
-                margin: 0 15px 0 5px;
-            }
-            li { 
-                margin: 20px 3vw;
-            }
-        } 
-        
-        #about_projects {
-            li::before {
-                position: relative;
-                display: block;
-                font-size: 1.5em;
-                left: -42px;
-                top: 40px;
-            } 
-            li {
-                margin-left: 50px;
-            }
-        }
-        
-        .patterned_bg {
-            background-color: $light-green;
-            background-image: url('../images/graphy.png');
-        }
-        
-        #about {
-            padding-bottom: 5vh;
-            
-            a, a:hover, a:active, a:visited, a:focus {
-                text-decoration: underline;
-                color: $dark-blue;
-            }
-            
-            h4 {
-                margin-top: 5vh;
-                margin-bottom: 5vh;
-            }
-            
-            h5 {
-                display: none;
-                
-                @include desktop {
-                    display: block;
-                }
-            }
-            
-            ul li {
-                list-style: none;
-            }
-            
-            #skill_container {
                 display: flex;
-                justify-content: space-around;
-                align-items: center;
-        
-                div.outer-box {
-                    width: 19vw;
-                    background-repeat: no-repeat;
-                    background-size: contain;
-                }
-                
-                div#web {
-                    background-image: url('../images/web.png');
-                }
-                
-                div#desktop {
-                    background-image: url('../images/desktop.png');
-                }
-                
-                div#personal {
-                    background-image: url('../images/personal.png');
-                }
-                
-                div.inner-box {
-                    display: inline-block;
-                    //height: 42vh;
-                    width: 15vw;
-                    padding: 25px 20px;
-                    box-sizing: content-box;
-                    background-color: $light-gray;
-                    border-radius: 5px;
-                    color: $dark-blue;
-                    
-                    h6::before {
-                        content: '//';
-                        position: relative;
-                        right: 10px;
-                        display: inline-block;
-                        font-size: 1.2em;
-                        color: $mid-gray;
-                        //margin: 0 15px 0 5px;
-                        font-weight: bold;
-                    }
-                    
-                }
-            }
-        }
-            
+                justify-content: space-between;
+                list-style: none;
 
-        #projects {
-            
-            a i {
-                vertical-align: middle;
-                color: black;
-                margin-right: 5px;
-            }
-            
-            a, a:hover, a:active, a:visited, a:focus {
-                text-decoration: underline;
-                color: $light-green;
-            }
-            
-            h4 {
-                font-size: 3em; 
-            }
-            
-            #project_container {
-                width: 80vw;
-                height: auto;
-                
-                .project {
-                    padding: 50px;
-                    
-                    picture {
-                        float: right;
-                    }
-                    
-                    .description {
-                        width: 45vw;
-                        
-                        @include desktop {
-                            width: 40vw;
-                        }
-                        p {
-                            margin-bottom: 100px;
-                            
-                            @include desktop{
-                                margin-bottom: 150px;
-                            }
-                        }
-                    }
+                .nav-title {
+                    color: $dark-blue;
+                    font-size: $size-nav-title;
+                    float: none;
                 }
+                
+                li {
+                    display: inline;
+                    font-size: $size-nav;
+                    a {
+                        padding: 0 10px;
+                    }
+                    
+                }
+            }
+            
+        }
+        
+        .page {
+            //border: 5px solid red;
+            padding: 5vh 0;
+
+            .text-accent {
+                font-weight: 900;
+                font-size: 32px;
+                color: $blue;
+                font-family: 'Oswald';
+            }
+
+            p {
+                margin: 50px 0;
+            }
+
+            .container {
+                display: flex;
+                margin-bottom: 10vh;
+                width: 70vw;
+
+                .text-margin {
+                    font-size: 24px;
+                    // font-family: 'Tangerine', serif;
+                    font-family: 'Caveat', cursive;
+                    // font-family: 'Dancing Script', cursive;
+                    min-width: 5vw;
+                    text-align: center;
+                    padding-top: 5px;
+                    padding-right: 10px;
+                }
+
+                .keyword {
+                    margin-bottom: 10px;
+                }
+    
+                div {
+                    font-size: 28px;
+                    // margin-left: 5vh;
+                    // flex-grow: 11;
+                }
+            }
+
+            .resume-container {
+                border-bottom: 5px solid $pink;
+                display: inline-block;
+                padding: 20px;
             }
         }
         
