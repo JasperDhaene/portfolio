@@ -8,6 +8,12 @@ $dark-gray: #616B76;
 $trans-gray: rgba(231,231,231,0.7);
 $trans-mid-gray: rgba(206,206,206,0.7);
 $beige: #FFF7EA;
+$white: #fff;
+$blue: #2472a4;
+$pink: #b92980;
+$seagreen: #29b9aa;
+
+$size-nav: 18px;
 
 @font-face {
     font-family: 'NexaDemoLight';
@@ -40,35 +46,17 @@ html {
                 
         font-family: 'NexaDemoLight', sans-serif;
         
-        background-color: $beige;
+        background-color: $white;
         
         box-sizing: border-box;
-        
-        h1 {
-            padding-top:10vh;
-            color: $dark-blue;
+
+        margin: 5vh 20px 0 20px;
+
+        @include big-desktop {
+            max-height: 100vh;
+            overflow-y: hidden;
         }
-        
-        h2 {
-            color: $green;
-        }
-        
-        h3 {
-            font-size: 3em;
-            font-weight: bolder;
-            
-            @include desktop {
-                font-size: 5em;
-            }
-        }
-            
-        h4 {
-            font-size: 2em;
-        }
-        
-        h5 {
-            margin: 5px 0px;
-        }
+
         
         a, a:hover, a:active, a:visited, a:focus {
             text-decoration: none;
@@ -77,263 +65,151 @@ html {
 
         
         nav {
-            position: fixed;
-            right: 30px;
-            top: 20vh;
-            
-            font-size: 2.5em;
-            
-            @include desktop {
-                font-size: 3em;
+            padding: 2vh 30px;
+            // max-width: 20vw;
+            float: right;
+
+            @include big-desktop {
+                padding: 2vh 5vw;
             }
             
+
+            p {
+                text-align: right;
+                font-size: $size-nav;
+
+                a {
+                    padding: 0 10px;
+                }
+            }
+
             ul {
                 list-style: none;
-            }
-            
-            li::after {
-                content: '';
-                width: 100%;
-                height: 7px;
-                background-color: $red;
-                display: inline-block;
-                position: relative;
-                bottom: 30px;
-                left: 10px;
-                
-                @include desktop {
-                    height: 10px;
-                    bottom: 35px;
+                text-align: right;
+
+                li {
+                    text-align: right;
+                    line-height: 1.4;
+                    margin-bottom: 20px;
                 }
-            
             }
 
+            #email {
+                background-color: $pink; 
+                color: $white; 
+                padding: 5px 10px;
+                letter-spacing: 1.5px;
+            }
         }
-
+        
         .page {
-            padding-top: 10vh;
-            padding-bottom: 10vh;
-            padding-right: 15vw;
-            padding-left: 50px;
-            
-            p {
-                font-size: 1.5em;
-                margin: 20px;
-            }
-            
-            li {
-                font-size: 1.1em;
-                margin: 20px 25px;
-                
-                @include desktop {
-                    font-size: 1.3em;
-                }
-            }
-        }
-        
-        #home {
-            font-family: 'NexaDemoBold';
+            padding: 10vh 0 0 0;
+            line-height: 1.3;
 
-            font-size: 6em;
-            
-            @include desktop {
-                font-size: 8em;
+            @include big-desktop {
+                padding: 5vh 0 0 0;
             }
-            padding-left: 40px;
-            
-            height: 70vh;
-            
-            h1 {
-                font-size: 0.8em;
+
+            .accented {
+                font-weight: 900;
+                font-size: 32px;
+                color: $blue;
+                font-family: 'Oswald';
+            }
+
+            div {
+                margin-bottom: 30px;
+
                 @include big-desktop {
-                    font-size: 1em;
+                    margin-bottom: 10px;
                 }
             }
-            
-            h2 {
-                font-size: 0.5em;
-                margin: 10vh;
-                
-                @include big-desktop {
-                    font-size: 0.8em;
-                    width: 50%;
-                }
-            }
-            
-            #title_separator {
-                color: $mid-gray;
-                font-size: 0.5em;
-                @include big-desktop {
-                    font-size: 0.6em;
-                }
-            }
-           
-        }
-        
-        .styled_list li::before {
-            content: '<>';
-            color: $trans-gray;
-            font-weight: bold;
-        }
-        
-        #about_challenge {
-            li::before {
-                display: inline-block;
-                font-size: 1em;
-                margin: 0 15px 0 5px;
-            }
-            li { 
-                margin: 20px 3vw;
-            }
-        } 
-        
-        #about_projects {
-            li::before {
-                position: relative;
-                display: block;
-                font-size: 1.5em;
-                left: -42px;
-                top: 40px;
-            } 
-            li {
-                margin-left: 50px;
-            }
-        }
-        
-        .patterned_bg {
-            background-color: $light-green;
-            background-image: url('../images/graphy.png');
-        }
-        
-        #about {
-            padding-bottom: 5vh;
-            
-            a, a:hover, a:active, a:visited, a:focus {
-                text-decoration: underline;
-                color: $dark-blue;
-            }
-            
-            h4 {
-                margin-top: 5vh;
-                margin-bottom: 5vh;
-            }
-            
-            h5 {
-                display: none;
-                
-                @include desktop {
-                    display: block;
-                }
-            }
-            
-            ul li {
-                list-style: none;
-            }
-            
-            #skill_container {
+
+            .container {
                 display: flex;
-                justify-content: space-around;
-                align-items: center;
-        
-                div.outer-box {
-                    width: 19vw;
-                    background-repeat: no-repeat;
-                    background-size: contain;
-                }
-                
-                div#web {
-                    background-image: url('../images/web.png');
-                }
-                
-                div#desktop {
-                    background-image: url('../images/desktop.png');
-                }
-                
-                div#personal {
-                    background-image: url('../images/personal.png');
-                }
-                
-                div.inner-box {
-                    display: inline-block;
-                    //height: 42vh;
-                    width: 15vw;
-                    padding: 25px 20px;
-                    box-sizing: content-box;
-                    background-color: $light-gray;
-                    border-radius: 5px;
-                    color: $dark-blue;
-                    
-                    h6::before {
-                        content: '//';
-                        position: relative;
-                        right: 10px;
-                        display: inline-block;
-                        font-size: 1.2em;
-                        color: $mid-gray;
-                        //margin: 0 15px 0 5px;
-                        font-weight: bold;
-                    }
-                    
-                }
-            }
-        }
-            
+                margin-bottom: 5vh;
+                width: 70vw;
 
-        #projects {
-            
-            a i {
-                vertical-align: middle;
-                color: black;
-                margin-right: 5px;
-            }
-            
-            a, a:hover, a:active, a:visited, a:focus {
-                text-decoration: underline;
-                color: $light-green;
-            }
-            
-            h4 {
-                font-size: 3em; 
-            }
-            
-            #project_container {
-                width: 80vw;
-                height: auto;
-                
-                .project {
-                    padding: 50px;
-                    
-                    picture {
-                        float: right;
-                    }
-                    
-                    .description {
-                        width: 45vw;
-                        
-                        @include desktop {
-                            width: 40vw;
-                        }
-                        p {
-                            margin-bottom: 100px;
-                            
-                            @include desktop{
-                                margin-bottom: 150px;
-                            }
-                        }
+                @include desktop {
+                    width: 65vw;
+                }
+
+                @include big-desktop {
+                    width: 70vw;
+                }
+
+                .text-margin {
+                    font-size: 24px;
+                    // font-family: 'Tangerine', serif;
+                    font-family: 'Caveat', cursive;
+                    // font-family: 'Dancing Script', cursive;
+                    min-width: 12vw;
+                    text-align: center;
+                    padding-top: 5px;
+                    padding-right: 10px;
+
+                    @include desktop {
+                        min-width: 5vw;
                     }
                 }
+
+                .keyword {
+                    margin-bottom: 10px;
+                    margin-right: 5px;
+                }
+
+                .highlighted {
+                    padding: 5px 10px;
+                }
+    
+                .text-section {
+                    font-size: 28px;
+                    margin-bottom: 50px;
+                    // flex-grow: 11;
+                }
             }
-        }
-        
-        #contact {
-            height: 20vh;
-            background-color: $light-green;
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            
-            p {
-                font-size: 2em;
+
+            #name {
+                background-color: black; 
+                color: $white; 
+            }
+
+            #job {
+                color: $seagreen;
+            }
+
+            #fixing {
+                color: $blue;
+            }
+
+            #curiosity {
+                background-color: $seagreen;
+                color: $white;
+            }
+
+            #passion {
+                color: $pink;
+            }
+
+            #writing {
+                color: $pink;
+            }
+
+            .resume-container {
+                border-bottom: 5px solid $pink;
+                padding: 20px;
+                float: right;
+                position: relative;
+                right: 5vw;
+                top: -64px;
+
+                @include big-desktop {
+                    float: unset;
+                    position: absolute;
+                    right: 5vw;
+                    bottom: 20px;
+                    top: unset;
+                }
             }
         }
         
