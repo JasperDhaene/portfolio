@@ -11,8 +11,8 @@ $beige: #FFF7EA;
 $white: #fff;
 $blue: #2472a4;
 $pink: #b92980;
+$seagreen: #29b9aa;
 
-$size-nav-title: 22px;
 $size-nav: 18px;
 
 @font-face {
@@ -62,34 +62,38 @@ html {
         nav {
             padding: 2vh 5vw;
             
-            ul {
-                display: flex;
-                justify-content: space-between;
-                list-style: none;
 
-                .nav-title {
-                    color: $dark-blue;
-                    font-size: $size-nav-title;
-                    float: none;
-                }
-                
-                li {
-                    display: inline;
-                    font-size: $size-nav;
-                    a {
-                        padding: 0 10px;
-                    }
-                    
+            p {
+                text-align: right;
+                font-size: $size-nav;
+
+                a {
+                    padding: 0 10px;
                 }
             }
-            
+
+            ul {
+                list-style: none;
+                text-align: right;
+
+                li {
+                    text-align: right;
+                    line-height: 1.4;
+                }
+            }
+
+            #email {
+                background-color: $pink; 
+                color: $white; 
+                padding: 5px 10px;
+            }
         }
         
         .page {
-            //border: 5px solid red;
             padding: 5vh 0;
+            line-height: 1.3;
 
-            .text-accent {
+            .accented {
                 font-weight: 900;
                 font-size: 32px;
                 color: $blue;
@@ -102,7 +106,7 @@ html {
 
             .container {
                 display: flex;
-                margin-bottom: 10vh;
+                margin-bottom: 5vh;
                 width: 70vw;
 
                 .text-margin {
@@ -118,13 +122,46 @@ html {
 
                 .keyword {
                     margin-bottom: 10px;
+                    margin-right: 5px;
+                }
+
+                .highlighted {
+                    padding: 5px 10px;
                 }
     
                 div {
                     font-size: 28px;
-                    // margin-left: 5vh;
+                    margin-bottom: 50px;
                     // flex-grow: 11;
                 }
+            }
+
+            
+
+            #name {
+                background-color: black; 
+                color: $white; 
+            }
+
+            #job {
+                color: $seagreen;
+            }
+
+            #fixing {
+                color: $blue;
+            }
+
+            #curiosity {
+                background-color: $seagreen;
+                color: $white;
+            }
+
+            #passion {
+                color: $pink;
+            }
+
+            #writing {
+                color: $pink;
             }
 
             .resume-container {

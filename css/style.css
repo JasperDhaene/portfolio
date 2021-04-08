@@ -14,22 +14,25 @@ html body {
     color: black; }
   html body nav {
     padding: 2vh 5vw; }
+    html body nav p {
+      text-align: right;
+      font-size: 18px; }
+      html body nav p a {
+        padding: 0 10px; }
     html body nav ul {
-      display: flex;
-      justify-content: space-between;
-      list-style: none; }
-      html body nav ul .nav-title {
-        color: #132D4E;
-        font-size: 22px;
-        float: none; }
+      list-style: none;
+      text-align: right; }
       html body nav ul li {
-        display: inline;
-        font-size: 18px; }
-        html body nav ul li a {
-          padding: 0 10px; }
+        text-align: right;
+        line-height: 1.4; }
+    html body nav #email {
+      background-color: #b92980;
+      color: #fff;
+      padding: 5px 10px; }
   html body .page {
-    padding: 5vh 0; }
-    html body .page .text-accent {
+    padding: 5vh 0;
+    line-height: 1.3; }
+    html body .page .accented {
       font-weight: 900;
       font-size: 32px;
       color: #2472a4;
@@ -38,7 +41,7 @@ html body {
       margin: 50px 0; }
     html body .page .container {
       display: flex;
-      margin-bottom: 10vh;
+      margin-bottom: 5vh;
       width: 70vw; }
       html body .page .container .text-margin {
         font-size: 24px;
@@ -48,9 +51,27 @@ html body {
         padding-top: 5px;
         padding-right: 10px; }
       html body .page .container .keyword {
-        margin-bottom: 10px; }
+        margin-bottom: 10px;
+        margin-right: 5px; }
+      html body .page .container .highlighted {
+        padding: 5px 10px; }
       html body .page .container div {
-        font-size: 28px; }
+        font-size: 28px;
+        margin-bottom: 50px; }
+    html body .page #name {
+      background-color: black;
+      color: #fff; }
+    html body .page #job {
+      color: #29b9aa; }
+    html body .page #fixing {
+      color: #2472a4; }
+    html body .page #curiosity {
+      background-color: #29b9aa;
+      color: #fff; }
+    html body .page #passion {
+      color: #b92980; }
+    html body .page #writing {
+      color: #b92980; }
     html body .page .resume-container {
       border-bottom: 5px solid #b92980;
       display: inline-block;
