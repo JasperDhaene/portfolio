@@ -11,8 +11,7 @@ html body {
   margin: 5vh 20px 0 20px; }
   @media (min-width: 1800px) {
     html body {
-      max-height: 100vh;
-      overflow-y: hidden; } }
+      max-height: 100vh; } }
   html body a, html body a:hover, html body a:active, html body a:visited, html body a:focus {
     text-decoration: none;
     color: black; }
