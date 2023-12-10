@@ -33,27 +33,6 @@ $font-body: 'National';
 $font-em: 'Feijoa Medium';
 $font-display: 'Feijoa';
 
-// @font-face {
-//     font-family: 'Lato';
-//     src: url('../fonts/Lato-Regular.otf') format("ttf");
-// }
-
-// @font-face {
-//     font-family: 'AntonioRegular';
-//     src: url('../fonts/Antonio-Regular.otf') format("ttf");
-// }
-
-// @font-face {
-//     font-family: 'AntonioBold';
-//     src: url('../fonts/Antonio-Bold.otf') format("ttf");
-// }
-
-// @font-face {
-//     font-family: 'AntonioLight';
-//     src: url('../fonts/Antonio-Light.otf') format("ttf");
-// }
-
-
 @font-face {
     font-family: 'National';
     src: url('../fonts/National-Regular.otf') format("opentype");
@@ -101,32 +80,10 @@ html {
     *, *::before, *::after {
         box-sizing: inherit;
     }
-    #test {
-        width: 100vw;
-        overflow-x: hidden;
-        
-
-        nav {
-            background-color: red;
-        }
-        aside {
-            background-color: blue;
-            display: block;
-            float: left;
-            width: calc(25vw - 48px - 48px);
-        }
-        main {
-            float: left;
-            background-color: green;
-            padding: 48px;
-            width: calc(75vw - 48px - 48px);
-        }
-    }
 
     body {
         width: 100vw;
         overflow-x: hidden;
-        // background-image: url('../images/paper_bg_3.png');
         background-color: $paper;
         height: 100vw;
         color: $black;
@@ -141,19 +98,16 @@ html {
         a.underline { 
             text-decoration: $orange-400 wavy underline;
             text-underline-offset: 4px;
-            // text-decoration-skip-ink:none;
             color: $black;
         }
         
         #home-page a.underline { 
             text-decoration: $cyan-400 wavy underline;
-            // text-decoration-skip-ink:none;
             color: $black;
         }
 
         #about-page a.underline { 
             text-decoration: $red-400 wavy underline;
-            // text-decoration-skip-ink:none;
             color: $black;
         }
 
@@ -177,13 +131,10 @@ html {
 
         iframe {
             width: 400px;
-            //height: 180px;
             height: 400px;
         }
 
         .song-title a {
-            //font-family: 'Daniel';
-            //font-weight: bold;
             font-size: 16px; 
             color: $base-500;
             line-break: anywhere;
@@ -193,20 +144,11 @@ html {
             text-overflow: ellipsis;
             margin-top: $spacing-small;
             margin-bottom: $spacing-medium;
-            //font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;
-            //font-weight: 100;
             text-decoration: none;
         }
 
-        // h1 {
-        //     font-family: 'AntonioBold';
-        //     font-size: 72px;
-        //     line-height: 92px;
-        // }
-
         img {
             width: 300px;
-            //height: 300px;
             border: solid 4px $base-800;
             box-shadow: 0px 4px 4px 2px rgba(0,0,0,25%);
         }
@@ -255,7 +197,6 @@ html {
         }
 
         nav {
-            // height: calc(20vh - 48px - 48px);
             height: 20vh;
             padding: $spacing-large;
 
@@ -283,11 +224,6 @@ html {
             
         }
 
-        // p {
-        //     width: 500px;
-        //     margin-bottom: 16px;
-        // }
-
         .topblock {
             height: 10vh;
         }
@@ -301,7 +237,6 @@ html {
         }
 
         aside {
-            // width: calc(25vw - 48px - 48px);
             width: 25vw;
             height: 80vh;
             padding: calc(10vh + $spacing-large) $spacing-large $spacing-large $spacing-large;
@@ -319,7 +254,6 @@ html {
             }
 
             .active {
-                // border-left: solid 4px $red-600;
                 color: $orange-400;
             }
         }
@@ -337,16 +271,10 @@ html {
         .menu-title + ul li {
             font-size: 24px;
         }
-        // p {
-        //     font-family: 'Lato', sans-serif;
-        // }
         
         main {
-            // width: 60vw;
-            // display: inline-block;
             float: left;
             padding: $spacing-large;
-            // width: calc(75vw - 48px - 48px);
             width: 75vw;
         }
 
@@ -364,12 +292,6 @@ html {
             margin-left: 15vw;
             width: 85vw;
 
-            // h1 {
-            //     font-family: 'AntonioBold';
-            //     font-size: 72px;
-            //     line-height: 92px;
-            // }
-
             img {
                 float: right;
                 margin-right: $spacing-large;
@@ -380,18 +302,8 @@ html {
                 width: 40vw;
                 margin-top: $spacing-small;
                 margin-bottom: $spacing-large;
-                // font-family: 'AntonioRegular';
-                // font-size: 24px;
-                // font-style: normal;
-                // font-weight: 100;
-                // line-height: 38px; /* 158.333% */
 
                 strong {
-                    // font-family: 'AntonioRegular';
-                    // font-size: 28px;
-                    // font-style: normal;
-                    // font-weight: 600;
-                    // line-height: 38px;
                     color: $cyan-400;
                 }
             }
@@ -402,7 +314,5 @@ html {
                 color: $base-600;
             }
         }
-        
-        
     }
 }
