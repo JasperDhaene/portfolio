@@ -24,25 +24,6 @@ html {
 html *, html *::before, html *::after {
   box-sizing: inherit;
 }
-html #test {
-  width: 100vw;
-  overflow-x: hidden;
-}
-html #test nav {
-  background-color: red;
-}
-html #test aside {
-  background-color: blue;
-  display: block;
-  float: left;
-  width: calc(25vw - 48px - 48px);
-}
-html #test main {
-  float: left;
-  background-color: green;
-  padding: 48px;
-  width: calc(75vw - 48px - 48px);
-}
 html body {
   width: 100vw;
   overflow-x: hidden;
@@ -61,21 +42,164 @@ html body a.underline {
   text-underline-offset: 4px;
   color: #100F0F;
 }
-html body #home-page a.underline {
+html body h1 {
+  font-family: "Feijoa";
+  font-size: 67px;
+}
+@media (max-width: 599px) {
+  html body h1 {
+    font-size: 48px;
+  }
+}
+html body h2 {
+  font-family: "National";
+  font-size: 42px;
+  color: #6F6E69;
+}
+@media (max-width: 599px) {
+  html body h2 {
+    font-size: 32px;
+  }
+}
+html body p {
+  margin: 8px 0;
+  width: 50vw;
+}
+@media (max-width: 599px) {
+  html body p {
+    width: 80vw;
+    font-size: 16px;
+  }
+}
+html body main {
+  float: left;
+  padding: 48px;
+  width: 75vw;
+}
+@media (max-width: 599px) {
+  html body main {
+    width: 90vw;
+    padding: 16px;
+  }
+}
+html body main .topblock {
+  height: 10vh;
+}
+@media (max-width: 599px) {
+  html body main .topblock {
+    margin-bottom: 32px;
+  }
+}
+html body main .content {
+  height: 100%;
+}
+html body main .content p {
+  margin-bottom: 24px;
+}
+html body main#home-page {
+  margin-left: 15vw;
+  width: 85vw;
+}
+@media (max-width: 599px) {
+  html body main#home-page {
+    margin-left: 5vw;
+    width: 90vw;
+  }
+}
+html body main#home-page img {
+  float: right;
+  margin-right: 48px;
+  box-shadow: 6px 6px 12px rgba(30, 4, 11, 0.2);
+}
+@media (max-width: 599px) {
+  html body main#home-page img {
+    margin-right: 32px;
+    display: none;
+  }
+}
+html body main#home-page h2 {
+  width: 40vw;
+  margin-top: 8px;
+  margin-bottom: 48px;
+}
+@media (max-width: 599px) {
+  html body main#home-page h2 {
+    width: 80vw;
+  }
+}
+html body main#home-page h2 strong {
+  color: #3AA99F;
+}
+html body main#home-page p {
+  margin-top: 8px;
+  font-size: 28px;
+  color: #6F6E69;
+}
+@media (max-width: 599px) {
+  html body main#home-page p {
+    font-size: 20px;
+  }
+}
+html body main#about-page {
+  margin-left: 25vw;
+}
+@media (max-width: 599px) {
+  html body main#about-page {
+    margin-left: 5vw;
+  }
+}
+html body main#about-page q {
+  font-family: "Feijoa";
+  font-size: 24px;
+  display: inline-block;
+  width: 50vw;
+  color: #D14D41;
+}
+@media (max-width: 599px) {
+  html body main#about-page q {
+    width: 100%;
+  }
+}
+html body main#home-page a.underline {
   text-decoration: #3AA99F wavy underline;
   color: #100F0F;
 }
-html body #about-page a.underline {
+html body main#about-page a.underline {
   text-decoration: #D14D41 wavy underline;
   color: #100F0F;
 }
-html body .nav-active#home {
-  color: #3AA99F;
+html body aside {
+  width: 25vw;
+  height: 80vh;
+  padding: calc(10vh + 48px) 48px 48px 48px;
+  float: left;
 }
-html body .nav-active#about {
-  color: #D14D41;
+@media (max-width: 599px) {
+  html body aside {
+    padding: 32px;
+    width: 100%;
+    height: 30vh;
+    display: flex;
+  }
 }
-html body .nav-active#creative a {
+html body aside > div {
+  margin-bottom: 48px;
+}
+@media (max-width: 599px) {
+  html body aside > div {
+    margin-bottom: 8px;
+  }
+}
+html body aside ul {
+  margin-top: 8px;
+}
+html body aside li {
+  border-left: solid 4px transparent;
+  list-style-type: none;
+  padding: 2px 8px;
+  margin-bottom: 8px;
+}
+html body aside .active {
   color: #DA702C;
 }
 html body div.song {
@@ -86,6 +210,12 @@ html body div.song {
 html body iframe {
   width: 400px;
   height: 400px;
+}
+@media (max-width: 599px) {
+  html body iframe {
+    width: 300px;
+    height: 300px;
+  }
 }
 html body .song-title a {
   font-size: 16px;
@@ -104,6 +234,11 @@ html body img {
   border: solid 4px #403E3C;
   box-shadow: 0px 4px 4px 2px rgba(0, 0, 0, 0.25);
 }
+@media (max-width: 599px) {
+  html body img {
+    width: 70%;
+  }
+}
 html body img.img_full_size {
   width: fit-content;
   border: none;
@@ -111,21 +246,11 @@ html body img.img_full_size {
   position: relative;
   top: calc(10vh - 151px);
 }
-html body h1 {
-  font-family: "Feijoa";
-  font-size: 67px;
-}
-html body h2 {
-  font-family: "National";
-  font-size: 42px;
-  color: #6F6E69;
-}
-html body q {
-  font-family: "Feijoa";
-  font-size: 24px;
-  display: inline-block;
-  width: 50vw;
-  color: #D14D41;
+@media (max-width: 599px) {
+  html body img.img_full_size {
+    width: 100vw;
+    top: 0;
+  }
 }
 html body section {
   margin-bottom: 64px;
@@ -135,13 +260,14 @@ html body section h2 {
   font-size: 32px;
   color: #878580;
 }
-html body p {
-  margin: 8px 0;
-  width: 50vw;
-}
 html body nav {
   height: 20vh;
   padding: 48px;
+}
+@media (max-width: 599px) {
+  html body nav {
+    padding: 32px;
+  }
 }
 html body nav div.nav-right {
   float: right;
@@ -152,9 +278,19 @@ html body nav div#logo {
   font-size: 32px;
   display: inline-block;
 }
+@media (max-width: 599px) {
+  html body nav div#logo {
+    display: none;
+  }
+}
 html body nav ul {
   display: flex;
   flex-direction: row;
+}
+@media (max-width: 599px) {
+  html body nav ul {
+    flex-direction: column;
+  }
 }
 html body nav li {
   font-family: "Feijoa";
@@ -164,35 +300,21 @@ html body nav li {
   text-align: center;
   margin-right: 48px;
 }
-html body .topblock {
-  height: 10vh;
+@media (max-width: 599px) {
+  html body nav li {
+    text-align: right;
+    font-size: 20px;
+    margin-right: 8px;
+  }
 }
-html body .content {
-  height: 100%;
+html body nav .nav-active#home {
+  color: #3AA99F;
 }
-html body .content p {
-  margin-bottom: 24px;
+html body nav .nav-active#about {
+  color: #D14D41;
 }
-html body aside {
-  width: 25vw;
-  height: 80vh;
-  padding: calc(10vh + 48px) 48px 48px 48px;
-  float: left;
-}
-html body aside ul {
-  margin-top: 8px;
-}
-html body aside li {
-  border-left: solid 4px transparent;
-  list-style-type: none;
-  padding: 2px 8px;
-  margin-bottom: 8px;
-}
-html body aside .active {
+html body nav .nav-active#creative a {
   color: #DA702C;
-}
-html body aside > div {
-  margin-bottom: 48px;
 }
 html body .menu-title {
   font-family: "Feijoa";
@@ -202,38 +324,19 @@ html body .menu-title {
 html body .menu-title + ul li {
   font-size: 24px;
 }
-html body main {
-  float: left;
-  padding: 48px;
-  width: 75vw;
+@media (max-width: 599px) {
+  html body .menu-title + ul li {
+    margin-right: 32px;
+  }
+}
+@media (max-width: 599px) {
+  html body #artwork-gallery {
+    width: 100vw;
+    text-align: center;
+  }
 }
 html body #artwork-gallery img {
   margin: 0 32px 32px 0;
-}
-html body main#about-page {
-  margin-left: 25vw;
-}
-html body main#home-page {
-  margin-left: 15vw;
-  width: 85vw;
-}
-html body main#home-page img {
-  float: right;
-  margin-right: 48px;
-  box-shadow: 6px 6px 12px rgba(30, 4, 11, 0.2);
-}
-html body main#home-page h2 {
-  width: 40vw;
-  margin-top: 8px;
-  margin-bottom: 48px;
-}
-html body main#home-page h2 strong {
-  color: #3AA99F;
-}
-html body main#home-page p {
-  margin-top: 8px;
-  font-size: 28px;
-  color: #6F6E69;
 }
 
 /*# sourceMappingURL=style.css.map */

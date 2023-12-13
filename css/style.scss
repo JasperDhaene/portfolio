@@ -100,29 +100,176 @@ html {
             text-underline-offset: 4px;
             color: $black;
         }
+
+        h1 {
+            font-family: $font-display;
+            font-size: 67px;
+
+            @include mobile {
+                font-size: 48px;
+            }
+        }
+
+        h2 {
+            font-family: $font-body;
+            font-size: 42px;
+            color: $base-600;
+
+            @include mobile {
+                font-size: 32px;
+            }
+        }
+
+        p {
+            margin: $spacing-small 0;
+            width: 50vw;
+
+            @include mobile {
+                width: 80vw;
+                font-size: 16px;
+            }
+        }
+
+        main {
+            float: left;
+            padding: $spacing-large;
+            width: 75vw;
+
+            @include mobile {
+                width: 90vw;
+                padding: 16px;
+            }
+
+            .topblock {
+                height: 10vh;
+
+                @include mobile {
+                    margin-bottom: $spacing-medium;
+                }
+            }
+    
+            .content {
+                height: 100%;
+    
+                p {
+                    margin-bottom: 24px;
+                };
+            }
+
+            &#home-page {
+                margin-left: 15vw;
+                width: 85vw;
+
+                @include mobile {
+                    margin-left: 5vw;
+                    width: 90vw;
+                }
+    
+                img {
+                    float: right;
+                    margin-right: $spacing-large;
+                    box-shadow: 6px 6px 12px rgba(30,4,11,20%);
+    
+                    @include mobile {
+                        margin-right: $spacing-medium;
+                        display: none;
+                    }
+                }
         
-        #home-page a.underline { 
-            text-decoration: $cyan-400 wavy underline;
-            color: $black;
+                h2 {
+                    width: 40vw;
+                    margin-top: $spacing-small;
+                    margin-bottom: $spacing-large;
+
+                    @include mobile {
+                        width: 80vw;
+                    }
+    
+                    strong {
+                        color: $cyan-400;
+                    }
+                }
+    
+                p {
+                    margin-top: $spacing-small;
+                    font-size: 28px;
+                    color: $base-600;
+
+                    @include mobile {
+                        font-size: 20px;
+                    }
+                }
+            }
+
+            &#about-page {
+                margin-left: 25vw;
+
+                @include mobile {
+                    margin-left: 5vw;
+                }
+
+                q {
+                    font-family: $font-display;
+                    font-size: 24px;
+                    display: inline-block;
+                    width: 50vw;
+                    color: $red-400;
+
+                    @include mobile {
+                        width: 100%;
+                    }
+                }
+            }
+            
+            &#home-page a.underline { 
+                text-decoration: $cyan-400 wavy underline;
+                color: $black;
+            }
+    
+            &#about-page a.underline { 
+                text-decoration: $red-400 wavy underline;
+                color: $black;
+            }
+
         }
 
-        #about-page a.underline { 
-            text-decoration: $red-400 wavy underline;
-            color: $black;
-        }
+        aside {
+            width: 25vw;
+            height: 80vh;
+            padding: calc(10vh + $spacing-large) $spacing-large $spacing-large $spacing-large;
+            float: left;
 
-        .nav-active#home{
-            color: $cyan-400;
-        }
+            @include mobile {
+                padding: $spacing-medium;
+                width: 100%;
+                height: 30vh;
+                display: flex;
+            }
 
-        .nav-active#about{
-            color: $red-400;
-        }
+            & > div {
+                margin-bottom: $spacing-large;
 
-        .nav-active#creative a {
-            color: $orange-400;
-        }
+                @include mobile {
+                    margin-bottom: $spacing-small;
+                }
+            }
 
+            ul {
+                margin-top: $spacing-small;
+            }
+
+            li {
+                border-left: solid 4px transparent;
+                list-style-type: none;
+                padding: 2px $spacing-small;
+                margin-bottom: $spacing-small;
+            }
+
+            .active {
+                color: $orange-400;
+            }
+        }
+        
         div.song {
             display: inline-block;
             margin-right: $spacing-medium;
@@ -132,6 +279,11 @@ html {
         iframe {
             width: 400px;
             height: 400px;
+
+            @include mobile {
+                width: 300px;
+                height: 300px;
+            }
         }
 
         .song-title a {
@@ -151,6 +303,10 @@ html {
             width: 300px;
             border: solid 4px $base-800;
             box-shadow: 0px 4px 4px 2px rgba(0,0,0,25%);
+
+            @include mobile {
+                width: 70%;
+            }
         }
 
         img.img_full_size {
@@ -159,26 +315,11 @@ html {
             box-shadow: none;
             position: relative;
             top: calc(10vh - 151px);
-        }
 
-        
-        h1 {
-            font-family: $font-display;
-            font-size: 67px;
-        }
-
-        h2 {
-            font-family: $font-body;
-            font-size: 42px;
-            color: $base-600;
-        }
-
-        q {
-            font-family: $font-display;
-            font-size: 24px;
-            display: inline-block;
-            width: 50vw;
-            color: $red-400;
+            @include mobile {
+                width: 100vw;
+                top: 0;
+            }
         }
 
         section {
@@ -191,27 +332,36 @@ html {
             }
         }
 
-        p {
-            margin: $spacing-small 0;
-            width: 50vw;
-        }
-
         nav {
             height: 20vh;
             padding: $spacing-large;
 
-            div.nav-right { float: right; }
+            @include mobile {
+                padding: $spacing-medium;
+            }
+
+            div.nav-right { 
+                float: right;
+            }
 
             div#logo {
                 font-family: $font-em;
                 color: $base-500;
                 font-size: 32px;
                 display: inline-block;
+
+                @include mobile {
+                    display: none;
+                }
             }
             
             ul {
                 display: flex;
                 flex-direction: row;
+
+                @include mobile {
+                    flex-direction: column;
+                }
             }
             li {
                 font-family: $font-display;
@@ -220,46 +370,25 @@ html {
                 list-style-type: none;
                 text-align: center;
                 margin-right: $spacing-large; //64px;
+
+                @include mobile {
+                    text-align: right;
+                    font-size: 20px;
+                    margin-right: $spacing-small; //64px;
+                }
             }
             
-        }
-
-        .topblock {
-            height: 10vh;
-        }
-
-        .content {
-            height: 100%;
-
-            p {
-                margin-bottom: 24px;
-            };
-        }
-
-        aside {
-            width: 25vw;
-            height: 80vh;
-            padding: calc(10vh + $spacing-large) $spacing-large $spacing-large $spacing-large;
-            float: left;
-
-            ul {
-                margin-top: $spacing-small;
+            .nav-active#home{
+                color: $cyan-400;
             }
-
-            li {
-                border-left: solid 4px transparent;
-                list-style-type: none;
-                padding: 2px $spacing-small;
-                margin-bottom: $spacing-small;
+    
+            .nav-active#about{
+                color: $red-400;
             }
-
-            .active {
+    
+            .nav-active#creative a {
                 color: $orange-400;
             }
-        }
-
-        aside > div {
-            margin-bottom: $spacing-large;
         }
 
         .menu-title {
@@ -270,49 +399,23 @@ html {
 
         .menu-title + ul li {
             font-size: 24px;
+
+            @include mobile {
+                margin-right: $spacing-medium;
+            }
         }
         
-        main {
-            float: left;
-            padding: $spacing-large;
-            width: 75vw;
-        }
 
         #artwork-gallery {
+            @include mobile {
+                width: 100vw;
+                text-align: center;
+            }
+
             img {
                 margin: 0 $spacing-medium $spacing-medium 0;
             }
         }
-
-        main#about-page {
-            margin-left: 25vw;
-        }
-
-        main#home-page {
-            margin-left: 15vw;
-            width: 85vw;
-
-            img {
-                float: right;
-                margin-right: $spacing-large;
-                box-shadow: 6px 6px 12px rgba(30,4,11,20%);
-            }
-    
-            h2 {
-                width: 40vw;
-                margin-top: $spacing-small;
-                margin-bottom: $spacing-large;
-
-                strong {
-                    color: $cyan-400;
-                }
-            }
-
-            p {
-                margin-top: $spacing-small;
-                font-size: 28px;
-                color: $base-600;
-            }
-        }
+        
     }
 }
