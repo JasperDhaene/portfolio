@@ -179,7 +179,7 @@ html {
                 h2 {
                     width: 40vw;
                     margin-top: $spacing-small;
-                    margin-bottom: $spacing-large;
+                    margin-bottom: $spacing-medium;
 
                     @include mobile {
                         width: 80vw;
@@ -365,7 +365,7 @@ html {
             }
             li {
                 font-family: $font-display;
-                font-size: 32px;
+                font-size: 24px;
                 padding: 2px $spacing-small;
                 list-style-type: none;
                 text-align: center;

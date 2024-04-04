@@ -120,7 +120,7 @@ html body main#home-page img {
 html body main#home-page h2 {
   width: 40vw;
   margin-top: 8px;
-  margin-bottom: 48px;
+  margin-bottom: 32px;
 }
 @media (max-width: 599px) {
   html body main#home-page h2 {
@@ -294,7 +294,7 @@ html body nav ul {
 }
 html body nav li {
   font-family: "Feijoa";
-  font-size: 32px;
+  font-size: 24px;
   padding: 2px 8px;
   list-style-type: none;
   text-align: center;
