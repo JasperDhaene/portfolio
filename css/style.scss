@@ -85,7 +85,6 @@ html {
         width: 100vw;
         overflow-x: hidden;
         background-color: $paper;
-        height: 100vw;
         color: $black;
         font-family: $font-body;
         font-size: 20px;
@@ -96,7 +95,7 @@ html {
         }
 
         a.underline { 
-            text-decoration: $orange-400 wavy underline;
+            text-decoration: $magenta-400 wavy underline;
             text-underline-offset: 4px;
             color: $black;
         }
@@ -266,7 +265,7 @@ html {
             }
 
             .active {
-                color: $orange-400;
+                color: $magenta-400;
             }
         }
         
@@ -387,7 +386,7 @@ html {
             }
     
             .nav-active#creative a {
-                color: $orange-400;
+                color: $magenta-400;
             }
         }
 

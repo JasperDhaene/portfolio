@@ -28,7 +28,6 @@ html body {
   width: 100vw;
   overflow-x: hidden;
   background-color: #FFFCF0;
-  height: 100vw;
   color: #100F0F;
   font-family: "National";
   font-size: 20px;
@@ -38,7 +37,7 @@ html body a:link, html body a:visited, html body a:active {
   text-decoration: none;
 }
 html body a.underline {
-  text-decoration: #DA702C wavy underline;
+  text-decoration: #CE5D97 wavy underline;
   text-underline-offset: 4px;
   color: #100F0F;
 }
@@ -200,7 +199,7 @@ html body aside li {
   margin-bottom: 8px;
 }
 html body aside .active {
-  color: #DA702C;
+  color: #CE5D97;
 }
 html body div.song {
   display: inline-block;
@@ -314,7 +313,7 @@ html body nav .nav-active#about {
   color: #D14D41;
 }
 html body nav .nav-active#creative a {
-  color: #DA702C;
+  color: #CE5D97;
 }
 html body .menu-title {
   font-family: "Feijoa";
